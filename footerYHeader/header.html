@@ -1,31 +1,35 @@
-<DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../StylesCSS/headerYFooter.css">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
-        <img src="../assets/images/game-logo.png" alt="imagen del logo del juego">
-        <ul>
-            <li><a href="../index.html">Index</a></li>
-            <li><a href="../historia.html">Historia</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-            <li><a href="../blog.html">Blog</a></li>
-            <li><a href="../media.html">Media</a></li>
-            <li><a href="../equip.html">Equip</a></li>
-            <li><a href="../comunitat.html">comunitat</a></li>      
-            <li class="theme-toggle-container">
-                <button id="theme-toggle" aria-label="Cambiar Tema Color">
-                   Tema </button>
-            </li>      
-        </ul>
-    
+        <div class="box" style="grid-area: box1;">  
+            <img class="logo" src="../assets/images/game-logo.png" alt="imagen del logo del juego"> 
+        </div>
+        
+        <div class="center-nav" style="grid-area: box2;">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <ul>
+                <li><a href="../index.html">Index</a></li>
+                <li><a href="../historia.html">Historia</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../media.html">Media</a></li>
+                <li><a href="../equip.html">Equip</a></li>
+                <li><a href="../comunitat.html">comunitat</a></li>      
+            </ul>
+        </div>
+       
+        <div class="change-theme" style="grid-area: box3;">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar Tema Color"> ✦ Alterar Energía </button>
+        </div>   
     </header>
-
 </body>
-</html> 
+</html>
