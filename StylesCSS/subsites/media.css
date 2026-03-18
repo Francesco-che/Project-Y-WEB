@@ -1,0 +1,8 @@
+
+.media-trailer{
+    display: flex;
+    justify-content: center;
+}
+.media-trailer video{
+    width: 60%;
+}
