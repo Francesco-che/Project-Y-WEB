@@ -1,8 +1,15 @@
 body {
     margin: 0;
     background-color: #4a4a4a; 
+    font-family: 'IndiraK', Georgia, serif; 
 }
 
+@font-face {
+    font-family: 'IndiraK';
+    src: url('../assets/fonts/Indira_k.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 header {
     padding: 15px 30px;
     align-items: center;
@@ -12,7 +19,15 @@ header {
     grid-template-areas: "box1 box2 box3";  
     border-bottom: 2px solid #222; 
     gap: 20px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header.header-transparent {
+    background-color: rgba(56, 56, 56, 0.2); 
+    border-bottom: 2px solid transparent; 
+    backdrop-filter: blur(5px); 
 }
 
 .box {
@@ -102,6 +117,127 @@ header {
     color: #1a1a1a;
     transform: translateY(-1px);
 }
+
+
+
+footer {
+    padding: 3vw 4vw;
+    align-items: center;
+    background-color: #1A1D24;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: "box1 box2 box3";  
+    border-top: 2px solid #4A7C59;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5);
+    gap: 2vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-logo-footer, .Container-pesi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.container-logo-footer p, .Container-pesi p {
+    font-family: 'IndiraK', Georgia, serif;
+    font-size: 0.90rem;
+    color: #F4F1EA;
+    opacity: 0.7;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.container-logo-footer a {
+    color: #5D93B4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.container-logo-footer a:hover {
+    color: #D4AF37;
+    border-bottom: 1px solid #D4AF37;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.logo-footer {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.6));
+}
+
+.logoPesi {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.6));
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-nav .menu-toggle {
+    display: none;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 15px; 
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #F4F1EA; 
+    font-family: 'IndiraK', Georgia, serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    padding: 5px 20px;
+    position: relative;
+    transition: all 0.3s ease; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.footer-nav a:hover {
+    color: #68A678; 
+    text-shadow: 0 0 10px rgba(104, 166, 120, 0.6), 0 0 20px rgba(104, 166, 120, 0.4); 
+    transform: scale(1.08); 
+}
+
+.footer-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #68A678;
+    box-shadow: 0 0 8px #68A678; 
+    transition: width 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+    width: 80%; 
+}
+
 @media (max-width: 1300px) {
 
     .center-nav a {
@@ -200,4 +336,30 @@ header {
         border-bottom: none; 
         color: #cca633; 
     }
+}
+@media (max-width: 800px) {
+
+        footer {
+            grid-template-columns: 1fr;
+            text-align: center;
+            grid-template-areas: 
+                "box1"
+                "box2"
+                "box3";
+            gap: 50px;
+        }
+
+        
+    
+        .container-logo-footer, .Container-pesi {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .footer-nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
 }
