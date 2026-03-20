@@ -109,5 +109,16 @@
             <p>Ⓟ 2026 Shared Treasures. Tots els drets reservats.</p>
         </div>
     </footer>
+    
+    <script>
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            header.classList.add('header-transparent');
+        } else {
+            header.classList.remove('header-transparent');
+        }
+    });
+    </script>
 </body>
 </html>
