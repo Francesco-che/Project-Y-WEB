@@ -26,6 +26,12 @@
     background-color: #B0B0B0;
 }
 
+body {
+    margin: 0;
+    background-color: #4a4a4a; 
+    font-family: 'IndiraK', Georgia, serif; 
+}
+
 @font-face {
     font-family: 'IndiraK';
     src: url('../assets/fonts/Indira_k.ttf') format('truetype');
