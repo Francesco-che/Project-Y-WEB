@@ -6,3 +6,10 @@
 .media-trailer video{
     width: 60%;
 }
+.videos-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 5em;
+    gap: 2em;
+}
