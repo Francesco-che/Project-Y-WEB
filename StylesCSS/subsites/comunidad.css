@@ -1,0 +1,118 @@
+:root {
+    --first-place: #FFDC4A;
+    --second-place: #B0B0B0;
+    --third-place: #FE9F4D;
+}
+
+body {
+    font-family: "Cinzel";
+    color: #FFF;
+}
+
+main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 56px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.podium {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.points {
+    text-align: center;
+}
+
+.first-place, .second-place, .third-place {
+    text-align: center;
+    align-content: center;
+    font-size: 42px;
+    font-weight: bolder;
+    width: 250px;
+    border: #000 2px outset;
+}
+
+.first-place {
+    height: 250px;
+    background-color: var(--first-place);
+}
+
+.second-place {
+    height: 175px;
+    background-color: var(--second-place);
+}
+
+.third-place {
+    height: 100px;
+    background-color: var(--third-place);
+}
+
+li {
+    font-size: 24px;
+    align-self: baseline;
+    margin-bottom: 5px;
+}
+
+ol > li:nth-child(1) {
+    background-color: var(--first-place);
+}
+
+ol > li:nth-child(2) {
+    background-color: var(--second-place);
+}
+
+ol > li:nth-child(3) {
+    background-color: var(--third-place);
+}
+
+article {
+    background-color: #FFF;
+    border: #AAA 2px outset;
+    width: 600px;
+    padding: 20px;
+    color: #000;
+}
+
+article > section {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-profile {
+    width: 75px;
+    margin-right: 20px;
+}
+
+article p {
+    margin: 0px;
+}
+
+article > h3 {
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 24px;
+}
