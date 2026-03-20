@@ -1,0 +1,26 @@
+:root {
+    /*PALETA DE COLORES  (por ahora colores provisionales)*/
+    --color0: #1A1D24; /* negro claro*/
+    --color1: #545454; /* Gris oscuro*/
+    --color2: #B0B0B0; /* Gris claro*/
+    --color3: #E7E7E7; /* Blanco */
+    --color4: #FFDC4A; /* Amarillo */
+    --color5: #4a7c59; /* Verde */
+    --color6: #5d93b4; /* Azul */
+}
+* { /*esto reduce los bordes "predeterminados" del navegador*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Linea horizontal */
+.horizontal-line{
+    margin: 0 10%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: .2rem;
+    border: none;
+    background-color: #B0B0B0;
+}
