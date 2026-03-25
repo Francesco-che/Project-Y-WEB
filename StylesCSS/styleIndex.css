@@ -1,53 +1,5 @@
-
-.heroSection {
-    display: grid;
-    
-    height: 100vh;
-    place-items: center;
-    
-    text-align: center;
-    
-
+body{
+    margin: 0;
+    padding: 0;
 }
 
-.heroText{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-button{
-
-    background-color: #3b82f6; 
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
-
-
-
-.heroImage img{ 
-    width: 100%;
-    
-}
-.heroImage {
-     width: 100%;
-     
-     object-fit: cover;
-     display: block;
-     grid-column: 1/2;
-     grid-row: 1/2 ;
-
-}
-
-.heroText {
-    grid-column: 1/2;
-     grid-row: 1/2 ;
-}
