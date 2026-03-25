@@ -11,7 +11,7 @@
     flex: 1;
     background: linear-gradient(139deg, #ffffff 0%, #a1a1a1 100%);
     transition: flex 1.5s ease, background-color 1s ease;
-    border: solid 4px black;
+    border: solid 4px #464646;
 }
 
 .historia-personajes-cajaLin:hover {
@@ -22,7 +22,7 @@
     flex: 1;
     background: linear-gradient(40deg, #464646 0%, #000000 100%);
     transition: flex 1.5s ease, background-color 1s ease;
-    border: solid 4px black;
+    border: solid 4px #464646;
 }
 
 .historia-personajes-cajaYing:hover {
