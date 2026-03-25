@@ -18,20 +18,21 @@ main {
 }
 
 h2 {
-    font-size: 48px;
     text-align: center;
     margin-top: 48px;
     margin-bottom: 16px;
+    font-size: 48px;
 }
 
 h3 {
-    font-size: 32px;
     text-align: center;
+    font-size: 32px;
 }
 
 .pfp {
     border-radius: 50%;
     width: 250px;
+    margin-bottom: 20px;
 }
 
 .social {
@@ -47,4 +48,56 @@ h3 {
     align-items: center;
     margin: 10px;
     gap: 10px;
+}
+
+#previous-dev, #next-dev {
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    align-self: center;
+    background-color: #B0B0B0;
+    border: #000 solid 3px;
+    border-radius: 15px;
+}
+
+#previous-dev:hover, #next-dev:hover {
+    background-color: #909090;
+}
+
+#previous-dev:active, #next-dev:active {
+    background-color: #727272;
+}
+
+@media(max-width: 560px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .socials > div {
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 1400px) {
+    #previous-dev, #next-dev {
+        display: none;
+    }
+}
+
+@media(max-width: 810px) {
+    #previous-dev, #next-dev {
+        position: absolute;
+    }
+
+    #previous-dev {
+        left: 5vw;
+    }
+
+    #next-dev {
+        right: 5vw;
+    }
 }
