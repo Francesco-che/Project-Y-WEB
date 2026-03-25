@@ -14,10 +14,10 @@ Shared Treasure es un videojuego desarrollado por *Cristian067*, es un bullet he
 - Github (*Shared Treasure*) [https://github.com/Cristian067/Project-Y](https://github.com/Cristian067/Project-Y)
 
 ## Contacto
-- ⬛Cristian Nievas (creador del juego) **cristiannievas@paucasesnovescifp.cat**
+- ⬛Cristian Nievas (*creador del juego*) **cristiannievas@paucasesnovescifp.cat**
 ### 
-- ⬜Francesco Direnzo (Desarrollador de la web) **francescoantoniodirenzo@paucasesnovescifp.cat**
-- ⬜Donovan Perelló Pastor (Desarrollador de la web) **donovanperello@paucasesnovescifp.cat**
-- ⬜Adrian Matas Muñoz (Desarrollador de la web) **adrianmatas@paucasesnovescifp.cat**
+- ⬜Francesco Direnzo (*Desarrollador de la web*) **francescoantoniodirenzo@paucasesnovescifp.cat**
+- ⬜Donovan Perelló Pastor (*Desarrollador de la web*) **donovanperello@paucasesnovescifp.cat**
+- ⬜Adrian Matas Muñoz (*Desarrollador de la web*) **adrianmatas@paucasesnovescifp.cat**
 ### 
-- 🟩 [info pauJam]
+- 🟩 Joan Pericas Oliver (*Responsable PauJam*) **poj@paucasesnovescifp.cat**
