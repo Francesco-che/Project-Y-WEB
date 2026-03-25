@@ -116,3 +116,15 @@ article > h3 {
     font-weight: bold;
     font-size: 24px;
 }
+@font-face {
+    font-family: 'IndiraK';
+    src: url('../assets/fonts/Indira_k.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+.comment-content {
+    font-size: 16px;
+   
+    font-family: 'Times New Roman', Times, serif, Georgia, serif;
+
+}
