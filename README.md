@@ -20,4 +20,4 @@ Shared Treasure es un videojuego desarrollado por *Cristian067*, es un bullet he
 - ⬜Donovan Perelló Pastor (Desarrollador de la web) **donovanperello@paucasesnovescifp.cat**
 - ⬜Adrian Matas Muñoz (Desarrollador de la web) **adrianmatas@paucasesnovescifp.cat**
 ### 
-- 🟩 [info pauJam]
+- 🟩 Joan Pericas Oliver (Responsable PauJam) **poj@paucasesnovescifp.cat**
