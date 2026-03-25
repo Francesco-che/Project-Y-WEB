@@ -1,8 +1,4 @@
-body {
-    margin: 0;
-    background-color: #4a4a4a; 
-    font-family: 'IndiraK', Georgia, serif; 
-}
+/*CSS DE HEADER Y FOOTER */
 
 @font-face {
     font-family: 'IndiraK';
@@ -10,6 +6,9 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+/* |-----------------------| Header |-----------------------| */
+
 header {
     padding: 15px 30px;
     align-items: center;
@@ -119,6 +118,7 @@ header.header-transparent {
 }
 
 
+/* |-----------------------| Footer |-----------------------| */
 
 footer {
     padding: 3vw 4vw;
@@ -237,6 +237,8 @@ footer {
 .footer-nav a:hover::after {
     width: 80%; 
 }
+
+/* |-----------------------| MEDIA QUERIES |-----------------------| */
 
 @media (max-width: 1300px) {
 
