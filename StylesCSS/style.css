@@ -1,3 +1,4 @@
+/* Este es el archivo css principal, contiene todos los elementos comunes que se pueden repetir en los diferentes archivos */
 :root {
     /*PALETA DE COLORES  (por ahora colores provisionales)*/
     --color0: #1A1D24; /* negro claro*/
@@ -12,4 +13,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Linea horizontal */
+.horizontal-line{
+    margin: 0 10%;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: .2rem;
+    border: none;
+    background-color: #B0B0B0;
+}
+
+body {
+    margin: 0;
+    background-color: #4a4a4a; 
+    font-family: 'IndiraK', Georgia, serif; 
+}
+
+@font-face {
+    font-family: 'IndiraK';
+    src: url('../assets/fonts/Indira_k.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
