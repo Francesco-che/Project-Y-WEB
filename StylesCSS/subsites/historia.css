@@ -1,3 +1,29 @@
+/* Historia titulo */
+.historia-title {
+    background-image: url('https://picsum.photos/1920/600?blur=5');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: var(--color5);
+    overflow: hidden;
+}
+
+.historia-title div {
+    z-index: 2;
+    position: relative;
+}
+
+.historia-title h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    text-align: center;
+    letter-spacing: 2px;
+}
 /* apartado mundo */
 .historia-mundo-container {
     display: grid;
