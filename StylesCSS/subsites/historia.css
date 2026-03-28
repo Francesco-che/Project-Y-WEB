@@ -1,40 +1,186 @@
+/* Historia titulo */
+.historia-title {
+    background-image: url('https://picsum.photos/1920/600?blur=5');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: var(--color5);
+    overflow: hidden;
+}
+
+.historia-title div {
+    z-index: 2;
+    position: relative;
+}
+
+.historia-title h1 {
+    font-size: 4em;
+    text-align: center;
+    letter-spacing: 6px;
+}
+/* apartado mundo */
+.historia-mundo-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--color3);
+}
+
+.historia-item.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    font-size: clamp(0.9rem, 2vw, 1.1rem); /* Ajusta el tamaño del texto según el ancho de la pantalla (me ayude con ia para esto) */
+    line-height: 1.6;
+}
+
+.historia-item.img-wrapper {
+    width: 100%;
+    background-color: var(--color2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Comportamiento perfecto de la imagen */
+.historia-item.img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
 /* APARTADO PERSONAJES DESLIZABLE <-------------------------- */
 .historia-personajes {
     display: flex;
-    background-color: black;
     width: 100%;
     height: 80vh;
     overflow: hidden;
+
+    max-width: 1800px;
+    margin: 0 auto 4rem auto;
+    padding: 0 5%;
+    gap: 1em;
 }
 
 .historia-personajes-cajaLin {
     flex: 1;
-    background: linear-gradient(139deg, #ffffff 0%, #a1a1a1 100%);
-    transition: flex 1.5s ease, background-color 1s ease;
-    border: solid 4px #4a4a4a;
+    background: linear-gradient(0deg, #4a4a4a 0%, #cbcbcb 48%);
+    transition: flex 1.8s ease;
+    border-radius: 1em;
 }
 
 .historia-personajes-cajaLin:hover {
-    flex: 5;
+    flex: 4;
 }
 
 .historia-personajes-cajaYing {
     flex: 1;
-    background: linear-gradient(40deg, #464646 0%, #000000 100%);
-    transition: flex 1.5s ease, background-color 1s ease;
-    border: solid 4px #4a4a4a;
+    background: linear-gradient(0deg, #000000 0%, #4a4a4a 90%);
+    transition: flex 1.8s ease;
+    color: white;
+    border-radius: 1em;
 }
 
 .historia-personajes-cajaYing:hover {
-    flex: 5;
+    flex: 4;
 }
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contenido img.personaje {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.historia-personajes aside .info p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease, margin 0.4s ease;
+
+    line-height: 1.6;
+}
+
+.historia-personajes aside:hover .info p {
+    opacity: 1;
+    max-height: 300px;
+    margin-top: 1rem;
+    transition-delay: 0.3s; 
+}
+.historia-personajes aside .info {
+    width: 100%;
+    max-width: 900px;
+}
+
+
 /* APARTADO PERSONAJES --------------------------> */
 
 @media (max-width: 768px){
     .historia-personajes{
         flex-direction: column;
+        height: auto;
     }
-    .historia-personajes-cajaLin:hover {
+    
+    .historia-personajes-cajaLin:hover,
+    .historia-personajes-cajaYing:hover {
         flex: 5;
+    }
+
+    .contenido {
+        position: relative;
+    }
+    .contenido::after {
+        content: '+';
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+        z-index: 10;
+    }
+    .historia-personajes-cajaLin .contenido::after {
+        background-color: #4a4a4a;
+        color: white;
+    }
+    .historia-personajes-cajaYing .contenido::after {
+        background-color: white;
+        color: #4a4a4a;
+    }
+    .historia-personajes aside:hover .contenido::after {
+        content: '✖';
+        transform: rotate(180deg);
+    }
+}
+
+@media (min-width: 768px) {
+    .historia-mundo-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        align-items: center; 
     }
 }
