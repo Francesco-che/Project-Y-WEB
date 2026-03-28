@@ -76,7 +76,7 @@
 }
 
 .historia-personajes-cajaLin:hover {
-    flex: 5;
+    flex: 4;
 }
 
 .historia-personajes-cajaYing {
@@ -88,7 +88,7 @@
 }
 
 .historia-personajes-cajaYing:hover {
-    flex: 5;
+    flex: 4;
 }
 
 .contenido {
@@ -108,13 +108,14 @@
     border-radius: 50%;
     margin-bottom: 1rem;
 }
- /* Información oculta que aparece al hacer hover */
+
 .historia-personajes aside .info p {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    margin: 0;
     transition: opacity 0.4s ease, max-height 0.4s ease, margin 0.4s ease;
+
+    line-height: 1.6;
 }
 
 .historia-personajes aside:hover .info p {
@@ -122,6 +123,10 @@
     max-height: 300px;
     margin-top: 1rem;
     transition-delay: 0.3s; 
+}
+.historia-personajes aside .info {
+    width: 100%;
+    max-width: 900px;
 }
 
 
