@@ -20,9 +20,9 @@
 }
 
 .historia-title h1 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: 4em;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
 }
 /* apartado mundo */
 .historia-mundo-container {
@@ -131,8 +131,43 @@
     .historia-personajes{
         flex-direction: column;
     }
-    .historia-personajes-cajaLin:hover {
+    
+    .historia-personajes-cajaLin:hover,
+    .historia-personajes-cajaYing:hover {
         flex: 5;
+    }
+
+    .contenido {
+        position: relative;
+    }
+    .contenido::after {
+        content: '+';
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+        z-index: 10;
+    }
+    .historia-personajes-cajaLin .contenido::after {
+        background-color: #4a4a4a;
+        color: white;
+    }
+    .historia-personajes-cajaYing .contenido::after {
+        background-color: white;
+        color: #4a4a4a;
+    }
+    .historia-personajes aside:hover .contenido::after {
+        content: '✖';
+        transform: rotate(180deg);
     }
 }
 @media (min-width: 768px) {
