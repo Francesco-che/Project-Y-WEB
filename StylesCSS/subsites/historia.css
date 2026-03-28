@@ -135,6 +135,7 @@
 @media (max-width: 768px){
     .historia-personajes{
         flex-direction: column;
+        height: auto;
     }
     
     .historia-personajes-cajaLin:hover,
@@ -175,6 +176,7 @@
         transform: rotate(180deg);
     }
 }
+
 @media (min-width: 768px) {
     .historia-mundo-container {
         grid-template-columns: repeat(2, 1fr);
