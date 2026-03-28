@@ -108,6 +108,21 @@
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+ /* Información oculta que aparece al hacer hover */
+.historia-personajes aside .info p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: opacity 0.4s ease, max-height 0.4s ease, margin 0.4s ease;
+}
+
+.historia-personajes aside:hover .info p {
+    opacity: 1;
+    max-height: 300px;
+    margin-top: 1rem;
+    transition-delay: 0.3s; 
+}
 
 
 /* APARTADO PERSONAJES --------------------------> */
