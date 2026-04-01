@@ -1,6 +1,5 @@
 const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS/10";
 
-
 const urlcomments = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/comments/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS";
  
 let dataBaseUsuarios = [];
@@ -74,13 +73,15 @@ function podio() {
     if (dataBaseUsuarios.length > 0) {
         firstPlace.textContent = `${dataBaseUsuarios[0].name} `;
         points1[0].textContent = `${dataBaseUsuarios[0].puntuacion} pts`;
+    }
+    if (dataBaseUsuarios.length > 1) {
         secondPlace.textContent = `${dataBaseUsuarios[1].name} `;
         points2[0].textContent = `${dataBaseUsuarios[1].puntuacion} pts`;
+    }
+    if (dataBaseUsuarios.length > 2) {
         thirdPlace.textContent = `${dataBaseUsuarios[2].name} `;
         points3[0].textContent = `${dataBaseUsuarios[2].puntuacion} pts`;
-
-
-    }    
+    }  
 
 
 }
@@ -106,3 +107,41 @@ function  mostrarComentarios(){
    
     );
 }
+
+const afegirComentario = () => {
+    const nameInput = document.getElementById("username");
+    const commentInput = document.getElementById("comment");
+    const miApiToken = "pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS";
+ 
+    const nuevoComentario = {
+        api_token: miApiToken,
+        name: nameInput.value,
+        content: commentInput.value
+    };
+   
+    fetch("https://phpstack-1076337-5399863.cloudwaysapps.com/api/comments", {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json' 
+        },
+        body: JSON.stringify(nuevoComentario) 
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error en la petición: ' + response.status);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Comentario publicado:', data);
+        
+        nameInput.value = '';
+        commentInput.value = '';
+
+        
+        obtenerComentarios(); 
+    })
+    .catch(error => console.error('Error:', error));
+};
+
+

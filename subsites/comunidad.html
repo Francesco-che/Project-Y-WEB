@@ -74,8 +74,20 @@
                 <li>------ (0 pts)</li>
             </ol>
         </section>
+
         <section>
             <h2>Comunitat</h2>
+           <div>
+                <form id="commentForm" onsubmit="event.preventDefault(); afegirComentario();">
+                    <label for="username">Nom d'usuari:</label>
+                        <input type="text" id="username" name="username" required>
+
+                    <label for="comment">Comentari:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                    <button type="submit">Publicar Comentari</button>
+                </form>
+        </div>
             <section id="comments">
                 <p>No hi ha comentaris encara. Sigues el primer a comentar!</p>    
             </section>
