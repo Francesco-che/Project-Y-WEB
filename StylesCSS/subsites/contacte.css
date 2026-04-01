@@ -28,7 +28,7 @@
     color: var(--color2);
     font-size: 1.5em;
 }
-
+/* apartado de info contacto */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -37,4 +37,9 @@
     max-width: 1200px;
     margin: 0 auto;
     color: var(--color7);
+}
+.contact-info p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--color1);
 }
