@@ -38,6 +38,7 @@ fetch(urlcomments)
       })
     .catch(error => console.error("Error fetching data:", error));
 }
+
 obtenerComentarios();
 function mostrarClasificacion() {
     const rankingTotal = document.getElementById("ranking");
