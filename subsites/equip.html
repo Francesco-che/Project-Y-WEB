@@ -46,16 +46,12 @@
                     <h3>Cristian Nievas</h3>
                     <section class="centered socials">
                         <div>
-                            <img class="social" src="../assets/images/discord-logo.png" alt="Discord">
-                            <p>kitsune076</p>
-                        </div>
-                        <div>
                             <img class="social" src="../assets/images/x-logo.png" alt="X">
-                            <p>kitsune076</p>
+                            <p>@Kitsune0761</p>
                         </div>
                         <div>
-                            <img class="social" src="../assets/images/mail-logo.png" alt="Email">
-                            <p>kitsune076</p>
+                            <img class="social" src="../assets/images/instagram-logo.png" alt="Instagram">
+                            <p>cristian07676</p>
                         </div>
                     </section>
                 </section>
@@ -63,8 +59,9 @@
         </section>
         <section>
             <h2>Desenvolupadors de la Web</h2>
-            <div class="teammembers-container">
-                <section class="centered">
+            <div class="teammembers-container" id="webmembers-container">
+                <button type="button" id="previous-dev">«</button>
+                <section class="centered" id="container-0">
                     <!-- Donovan Perelló -->
                     <img class="pfp" src="../assets/images/user-profile.png" alt="Donovan Perelló">
                     <h3>Donovan Perelló</h3>
@@ -75,7 +72,7 @@
                         </div>
                     </section>
                 </section>
-                <section class="centered">
+                <section class="centered" id="container-1">
                     <!-- Francesco Direnzo -->
                     <img class="pfp" src="../assets/images/user-profile.png" alt="Francesco Direnzo">
                     <h3>Francesco Direnzo</h3>
@@ -86,7 +83,7 @@
                         </div>
                     </section>
                 </section>
-                <section class="centered">
+                <section class="centered" id="container-2">
                     <!-- Adrián Matas -->
                     <img class="pfp" src="../assets/images/user-profile.png" alt="Adrián Matas">
                     <h3>Adrián Matas</h3>
@@ -101,6 +98,7 @@
                         </div>
                     </section>
                 </section>
+                <button type="button" id="next-dev">»</button>
             </div>
         </section>
     </main>
@@ -124,6 +122,8 @@
             <p>Ⓟ 2026 Shared Treasures. Tots els drets reservats.</p>
         </div>
     </footer>
+
+    <script src="../scripts/equip.js"></script>
 
     <script>
     const header = document.querySelector('header');
