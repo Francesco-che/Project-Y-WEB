@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/images/game-logo.png">
+    <link rel="stylesheet" href="../StylesCSS/style.css">
+    <link rel="stylesheet" href="../StylesCSS/subsites/contacte.css">
+    <title>Contacte</title>
     <link rel="stylesheet" href="../StylesCSS/headerYFooter.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
@@ -31,11 +34,52 @@
             <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar Tema Color"> ✦ Alterar Energía </button>
         </div>   
     </header>
-        
-        <div class="change-theme" style="grid-area: box3;">
-            <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar Tema Color"> ✦ Alterar Energía </button>
-        </div>   
-    </header>
+     
+    <section class="contacte-title">
+        <div>
+            <h1>CONTACT US</h1>
+        </div>
+    </section>
+    <h2 class="contacte-subtitle">Let's start a conversation!</h2>
 
+    <main class="contact-grid">
+        <aside class="contacte-info">
+            <h2>Informació de Contacte</h2>
+            <p>Benvingut al canal oficial de contacte B2B de<strong>Shared Treasure</strong>!</p>
+            <p>Aquest apartat està dirigit exclusivament per contacte professional , publishers i altres peticions comercials.</p>
+            <br>
+            <p>Si ets un jugador i necessites assistència tècnica o vols reportar un error, si us plau</p>
+            <a href="equip.html" class="contacte-link">Contacta amb noltres</a>
+        </aside>
+
+        <section class="contact-form-container">
+        <form id="b2b-form" class="b2b-form">
+            
+            <input type="hidden" id="api_token" name="api_token" value="AQUI_IRA_TU_TOKEN">
+
+            <div class="form-group">
+                <label for="nombre">Nom</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ex: Jane Doe - IGN">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="contacte@empresa.com">
+            </div>
+
+            <div class="form-group">
+                <label for="asunto">Assumpte</label>
+                <input type="text" id="asunto" name="asunto" required placeholder="Ex: Petició de Review Copy">
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Missatge</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escriu la teva proposta o consulta aquí..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Missatge</button>
+        </form>
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,40 @@
+/*titulo (fondo imagen)*/
+.contacte-title {
+    background-image: url('https://picsum.photos/1920/600?blur=1');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: var(--color7);
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.contacte-title div {
+    z-index: 2;
+    position: relative;
+    background-color: #84848482;
+    padding: 2em;
+}
+
+.contacte-subtitle {
+    text-align: center;
+    padding: 1em 0;
+    color: var(--color2);
+    font-size: 1.5em;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--color7);
+}
