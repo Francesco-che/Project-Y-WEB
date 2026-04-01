@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/game-logo.png">
-
+    
     <title>Comunitat</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../StylesCSS/style.css">
@@ -42,30 +42,30 @@
             <section class="podium">
                 <section>
                     <div>
-                        <p class="points">5 pts</p>
-                        <h3>------</h3>
+                        <p class="points2">5 pts</p>
+                        <h4 id="namePlayer2">------</h4>
                     </div>
                     <div class="second-place">2</div>
                 </section>
                 <section>
                     <div>
-                        <p class="points">4 pts</p>
-                        <h3>------</h3>
+                        <p class="points1">4 pts</p>
+                        <h4 id="namePlayer1">------</h4>
                     </div>
                     <div class="first-place">1</div>
                 </section>
                 <section>
                     <div>
-                        <p class="points">3 pts</p>
-                        <h3>------</h3>
+                        <p class="points3">3 pts</p>
+                        <h4 id="namePlayer3">------</h4>
                     </div>
                     <div class="third-place">3</div>
                 </section>
             </section>
         </section>
-        <section>
+        <section >
             <h2>Ranking</h2>
-            <ol>
+            <ol id="ranking">
                 <li>------ (5 pts)</li>
                 <li>------ (4 pts)</li>
                 <li>------ (3 pts)</li>
@@ -76,19 +76,9 @@
         </section>
         <section>
             <h2>Comunitat</h2>
-            <article>
-                <section>
-                    <img class="user-profile" src="../assets/images/user-profile.png" alt="Foto de perfil">
-                    <div>
-                        <p class="user-name">User</p>
-                        <p>Publicat el 01/01/2026</p>
-                    </div>
-                </section>
-                <h3>"Opinió"</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas vitae sem vel porttitor. Phasellus ullamcorper lobortis mauris non scelerisque. Cras dictum mauris feugiat urna tincidunt, at efficitur arcu posuere. Duis in luctus urna. Morbi eget est sit amet ipsum elementum viverra. Maecenas sit amet risus vel turpis convallis tincidunt.
-                </p>
-            </article>
+            <section id="comments">
+                <p>No hi ha comentaris encara. Sigues el primer a comentar!</p>    
+            </section>
         </section>
     </main>
     <footer>
@@ -112,15 +102,5 @@
         </div>
     </footer>
     
-    <script>
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('header-transparent');
-        } else {
-            header.classList.remove('header-transparent');
-        }
-    });
-    </script>
-</body>
+    <script src="../scripts/fetch.js"></script>
 </html>
