@@ -34,7 +34,25 @@ body {
 
 @font-face {
     font-family: 'IndiraK';
-    src: url('./assets/fonts/Indira_K.ttf') format('truetype');
+    src: url('../assets/fonts/Indira_k.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+.h2-title-yellow {
+    text-align: center;
+    padding: .5em 0;
+    color: var(--color4);
+    font-size: 2em;
+}
+.h2-title-blue {
+    text-align: center;
+    padding: .5em 0;
+    color: var(--color6);
+    font-size: 2em;
+}
+.h2-title-green {
+    text-align: center;
+    padding: .5em 0;
+    color: var(--color5);
+    font-size: 2em;
 }
