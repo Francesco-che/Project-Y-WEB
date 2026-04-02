@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/images/game-logo.png">
+    <link rel="stylesheet" href="../StylesCSS/headerYFooter.css">
     <link rel="stylesheet" href="../StylesCSS/style.css">
     <link rel="stylesheet" href="../StylesCSS/subsites/contacte.css">
     <title>Contacte</title>
-    <link rel="stylesheet" href="../StylesCSS/headerYFooter.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -45,11 +45,11 @@
     <main class="contact-grid">
         <aside class="contacte-info">
             <h2>Informació de Contacte</h2>
-            <p>Benvingut al canal oficial de contacte B2B de<strong>Shared Treasure</strong>!</p>
+            <p>Benvingut al canal oficial de contacte B2B de <strong>Shared Treasure</strong> !</p>
             <p>Aquest apartat està dirigit exclusivament per contacte professional , publishers i altres peticions comercials.</p>
             <br>
-            <p>Si ets un jugador i necessites assistència tècnica o vols reportar un error, si us plau</p>
-            <a href="equip.html" class="contacte-link">Contacta amb noltres</a>
+            <p>Si ets un jugador i necessites assistència tècnica o vols reportar un error, si us plau <a href="equip.html" class="contacte-link">Contacta amb noltres</a></p>
+            
         </aside>
 
         <section class="contact-form-container">
@@ -59,7 +59,7 @@
 
             <div class="form-group">
                 <label for="nombre">Nom</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Ex: Jane Doe - IGN">
+                <input type="text" id="nombre" name="nombre" required placeholder="El teu nom complet">
             </div>
 
             <div class="form-group">
@@ -69,7 +69,7 @@
 
             <div class="form-group">
                 <label for="asunto">Assumpte</label>
-                <input type="text" id="asunto" name="asunto" required placeholder="Ex: Petició de Review Copy">
+                <input type="text" id="asunto" name="asunto" required placeholder="Assumpte de la teva consulta">
             </div>
 
             <div class="form-group">
@@ -77,9 +77,34 @@
                 <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escriu la teva proposta o consulta aquí..."></textarea>
             </div>
 
-            <button type="submit" class="btn-submit">Enviar Missatge</button>
+            <div class="btn-submit-container">
+                <button type="submit" class="btn-submit">Enviar</button>
+            </div>
+            
         </form>
         </section>
     </main>
+
+    <footer>
+     <div class="container-logo-footer" style="grid-area: box1;">  
+            <img class="logo-footer" src="../assets/images/game-logo.png" alt="imagen del logo del juego"> 
+            <p>Desenvolupat per IFC32A. Contacte: <a href="../equip.html">Equip de desenvolupament</a> </p>   
+    </div>
+   
+    <div class="footer-nav" style="grid-area: box2;">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <ul>
+                <li><a href="../index.html">Tornar a l'inici</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="https://jaumepericasoliver.github.io/paujam_25_26/" style="color: var(--color7); text-decoration: none;">Pagina PauJam</a></li>    
+                <li><a href="comunidad.html">Preguntes Freqüents</a></li>  
+                
+            </ul>
+    </div>
+         <div class="Container-pesi" style="grid-area: box3;">  
+            <img class="logoPesi" src="../assets/images/pesi.png" alt="imagen del logo de pesi"> 
+            <p>Ⓟ 2026 Shared Treasures. Tots els drets reservats.</p>
+    </div>
+    </footer>
 </body>
 </html>

@@ -1,9 +1,9 @@
 /*titulo (fondo imagen)*/
 .contacte-title {
-    background-image: url('https://picsum.photos/1920/600?blur=1');
+    background-image: url('https://cdn.wallpapersafari.com/22/85/4uX2Nl.png');
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
+    min-height: 60vh;
 
     display: flex;
     justify-content: center;
@@ -18,7 +18,8 @@
 .contacte-title div {
     z-index: 2;
     position: relative;
-    background-color: #84848482;
+    background-color: #18181896;
+    border-radius: 40px;
     padding: 2em;
 }
 
@@ -26,20 +27,137 @@
     text-align: center;
     padding: 1em 0;
     color: var(--color2);
-    font-size: 1.5em;
+    font-size: 2em;
+    color: var(--color3);
+    background-color: #18181896;
+
 }
 /* apartado de info contacto */
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
     padding: 4rem 5%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     color: var(--color7);
 }
-.contact-info p {
-    line-height: 1.6;
+.contacte-info {
+    text-align: center;
+}
+.contacte-info strong {
+    color: var(--color0);
+}
+.contacte-info h2 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+
+    padding: .5em;
+    background-color: #18181852;
+    border-radius: 40px;
+}
+.contacte-info p {
+    line-height: 1.5;
     margin-bottom: 1.5rem;
-    color: var(--color1);
+    color: var(--color3);
+    font-size: 1.2em;
+}
+
+.contacte-info a {
+    color: var(--color7);
+    text-decoration: none;
+}
+.contacte-info a:hover {
+    color: var(--color7b);
+}
+/* formulario ----------------------->*/
+
+.contact-form-container {
+    background-color: #18181896;
+    padding: 2.5rem;
+    border-radius: 12px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--color3);
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color0);
+    border: 1px solid var(--color1);
+    color: white;
+    border-radius: 6px;
+    font-family: inherit;
+
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color7);
+    box-shadow: 0 0 5px var(--color7b);
+}
+
+.btn-submit-container {
+    display: flex;
+    justify-content: center;
+}
+.btn-submit {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+
+    background-color: var(--color7);
+    color: var(--color3);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+.btn-submit:hover {
+    background-color: var(--color7b);
+}
+
+/* un pequeño cambio al footer para ajustarlo con la paleta de colroes de este apartado */
+footer {
+    border-top: 2px solid var(--color7);
+}
+.footer-nav a:hover {
+    color: var(--color7); 
+    text-shadow: 0 0 10px rgba(156, 58, 58, 0.6), 0 0 20px rgba(104, 166, 120, 0.4); 
+}
+.footer-nav a::after {
+    background-color: var(--color7);
+    box-shadow: 0 0 8px var(--color7b); 
+}
+
+
+/* MEDIA QUIERIES ---> */
+@media (min-width: 850px) {
+    .contact-grid {
+        grid-template-columns: 1.2fr 1.2fr;
+        gap: 4rem;
+        align-items: start;
+    }
 }
