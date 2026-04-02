@@ -163,9 +163,6 @@ footer {
     }
 }
 @media (max-width: 850px) {
-    .contacte-title div {
-        padding: 1em;
-    }
     .contacte-subtitle {
         font-size: 1.5em;
     }
