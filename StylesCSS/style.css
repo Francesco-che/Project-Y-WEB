@@ -8,6 +8,8 @@
     --color4: #FFDC4A; /* Amarillo */
     --color5: #4a7c59; /* Verde */
     --color6: #5d93b4; /* Azul */
+    --color7: #c16767; /* rojo */
+    --color7b: #a02323; /* tono más oscuro del rojo */
 }
 * { /*esto reduce los bordes "predeterminados" del navegador*/
     margin: 0;
