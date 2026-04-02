@@ -64,7 +64,8 @@
 
     max-width: 1800px;
     margin: 0 auto 4rem auto;
-    padding: 0 5%;
+
+    padding: 3em 5%;
     gap: 1em;
 }
 
@@ -136,6 +137,7 @@
     .historia-personajes{
         flex-direction: column;
         height: auto;
+        gap: 4rem;
     }
     
     .historia-personajes-cajaLin:hover,
