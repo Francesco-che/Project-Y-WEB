@@ -28,7 +28,7 @@ function mostrarPosts() {
         espacioBlog.innerHTML += `
             <article class="post">
                 <div class="post-header">
-                    <img src="../assets/images/game-logo.png" alt="Logo" class="post-logo">
+                    <img src="../assets/images/characters/Yang_sprite1-sBg.png" alt="Logo" class="post-logo">
                     
                     <div class="post-info">
                         <h2 class="post-title">${post.title}</h2>
