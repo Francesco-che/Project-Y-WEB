@@ -80,3 +80,28 @@ h1 {
     background-color: var(--color5);
     color: var(--color3);
 }
+
+/* SHAPE DIVIDER - EFECTO PARALLAX (efecto de profundidad) */
+.shape-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    background-image: url('../assets/images/backgrounds/hierba-shape-divider3.png');
+    background-repeat: repeat-x;
+    background-position: bottom end;
+    background-size: contain;
+    
+    height: 300px;
+    z-index: 3;
+    
+    display: flex;
+    align-items: flex-end;
+}
+
+.franja-negra {
+    width: 100%;
+    background-color: black;
+    height: 25px;
+}
