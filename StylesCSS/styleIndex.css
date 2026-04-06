@@ -2,15 +2,24 @@
     --shader-angle: 150deg;
 }
 
+/* Sección hero */
 .heroSection {
-    display: grid;
-    
+    position: relative; /* Clave para posicionar el shape divider abajo */
     height: 100vh;
-    place-items: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    
+    overflow: hidden;
 
+    background-image: url('../assets/images/backgrounds/1b456377a9dce67a7dc3630260aa7572.gif');
+    /* 
+    background-image: url('../assets/images/backgrounds/index_bkg_pixelArt.gif');            probar entre estos 2 fondos
+    background-image: url('../assets/images/backgrounds/1b456377a9dce67a7dc3630260aa7572.gif');
+    */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .heroText{
@@ -20,80 +29,54 @@
     align-items: center;
 }
 
-button{
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color3);
+    z-index: 2;
+    padding: 2rem;
+    max-width: 800px;
+    margin-top: -100px;
 
-    background-color: #3b82f6; 
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
+    background: linear-gradient(90deg, #f7f7f88a 0%, #0708088a 100%);
+    border: solid 4px var(--color0);
+    border-radius: 80px;
+}
+
+.hero-logo {
+    width: 250px;
+}
+
+/* h1 del titulo */
+h1 {
+    font-size: 5em;
+    -webkit-text-stroke: #000 1px;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+/* botones */
+.hero-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+.heroBtn {
+    background-color: var(--color0); 
+    color: var(--color3);
+    border: 2px solid var(--color2);
+    padding: 12px 40px;
+    border-radius: 10px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 
-}
-
-.heroImage img{ 
-    width: 100%;
-    
-}
-.heroImage {
-    width: 100%; 
-    object-fit: cover;
-    display: block;
-    grid-column: 1/2;
-    grid-row: 1/2 ;
-}
-
-.heroText {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    gap: 20px;
-    color: #fff;
-    align-self: start;
-    margin: 100px;
-}
-
-h1 {
-    font-size: 72px;
-    -webkit-text-stroke: #000 2.0px;
-    font-weight: normal;
-}
-
-.inverse {
-    color: #000;
-    -webkit-text-stroke-color: #fff;
-}
-
-.heroBtn {
-    background: linear-gradient(var(--shader-angle), #000 45%, #fff 55%);
-    transition-duration: 0.5s;
-}
-
-.heroTxtShader {
-    background: linear-gradient(var(--shader-angle), #fff 45%, #000 55%);
-    color: transparent;
-    background-clip: text;
-    font-size: 24px;
+    transition: background-color 0.5s ease-in-out, color 0.3s;
 }
 
 .heroBtn:hover {
-    scale: 1.15;
-    transition-duration: 0.6s;
-    box-shadow: 0px 0px 11px 6px #fff;
-    animation: btnHover 2s infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes btnHover {
-    0% {
-        box-shadow: 0px 0px 11px 6px #fff;
-    }
-
-    50% {
-        box-shadow: 0px 0px 11px 10px #fff;
-    }
-
-    100% {
-        box-shadow: 0px 0px 11px 6px #fff;
-    }
+    background-color: var(--color5);
+    color: var(--color3);
 }
