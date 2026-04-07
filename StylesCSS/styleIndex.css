@@ -56,7 +56,10 @@ h1 {
     font-weight: bold;
     padding-bottom: 1em;
 }
-
+.inverse {
+    color: #000;
+    -webkit-text-stroke-color: #fff;
+}
 /* botones */
 .hero-buttons {
     display: flex;
@@ -207,5 +210,66 @@ h1 {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
         align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    
+    .heroContent {
+        padding: 1.5rem;
+        border-radius: 30px;
+        width: 90%;
+        margin-top: -50px;
+    }
+
+    .hero-logo {
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 3em;
+        padding-bottom: 0.5em;
+    }
+
+    .hero-buttons {
+        flex-direction: column; 
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .heroBtn {
+        width: 100%; 
+    }
+
+    .shape-divider {
+        height: 120px; 
+    }
+
+    .about-section {
+        padding: 3rem 5%;
+    }
+
+    .about-content {
+        padding: 2em 1.5em; 
+        border-radius: 20px;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .btn-learn-more {
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .btn-learn-more:hover {
+        padding: 1em; 
+    }
+
+    .about-video video {
+        width: 100%;
     }
 }
