@@ -89,7 +89,7 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 1980px;
     
     background-image: url('../assets/images/backgrounds/hierba-shape-divider3.png');
     background-repeat: repeat-x;
@@ -242,9 +242,14 @@ h1 {
     }
 
     .shape-divider {
-        height: 120px; 
+        height: 250px; 
+        width: 700px;
     }
 
+    .franja-negra {
+        height: 100px;
+    }
+    
     .about-section {
         padding: 3rem 5%;
     }
