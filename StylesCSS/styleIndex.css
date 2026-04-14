@@ -276,11 +276,7 @@ header {
 
     .shape-divider {
         height: 300px; 
-        width: 100%;
-    }
-
-    .franja-negra {
-        height: 100px;
+        width: 900px;
     }
     
     .about-section {
@@ -326,5 +322,14 @@ header {
     }
     .hero-logo {
         width: 220px;
+    }
+}
+@media (max-width: 412px){
+    .shape-divider {
+        height: 250px;
+        width: 700px;
+    }
+    .franja-negra {
+        height: 100px;
     }
 }
