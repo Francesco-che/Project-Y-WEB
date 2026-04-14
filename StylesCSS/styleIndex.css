@@ -2,6 +2,9 @@
     --shader-angle: 150deg;
 }
 
+body {
+    background-color: #101818;
+}
 /* Sección hero */
 .heroSection {
     position: relative; /* Clave para posicionar el shape divider abajo */
@@ -201,17 +204,6 @@ h1 {
     margin-top: -10px; 
     position: relative;
     z-index: 2;
-}
-
-/* cambio en el header exclusivo de index */
-header {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(56, 56, 56, 0.2);
-}
-
-.heroSection {
-    margin-top: 0; 
 }
 
 /* =========================================
