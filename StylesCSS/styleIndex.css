@@ -253,8 +253,8 @@ header {
     }
 
     .shape-divider {
-        height: 250px; 
-        width: 700px;
+        height: 300px; 
+        width: 100%;
     }
 
     .franja-negra {
@@ -288,5 +288,17 @@ header {
 
     .about-video video {
         width: 100%;
+    }
+}
+@media (max-width: 1500px) {
+    .shape-divider {
+        height: 200px;
+    }
+
+    .scroll-cover-container {
+        margin-top: -225px; 
+    }
+    .heroContent {
+        margin-top: -150px; 
     }
 }
