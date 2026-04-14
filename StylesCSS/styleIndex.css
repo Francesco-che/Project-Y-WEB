@@ -89,7 +89,7 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 1980px;
+    width: 100%;
     
     background-image: url('../assets/images/backgrounds/hierba-shape-divider3.png');
     background-repeat: repeat-x;
@@ -201,6 +201,17 @@ h1 {
     margin-top: -10px; 
     position: relative;
     z-index: 2;
+}
+
+/* cambio en el header exclusivo de index */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(56, 56, 56, 0.2);
+}
+
+.heroSection {
+    margin-top: 0; 
 }
 
 /* =========================================
