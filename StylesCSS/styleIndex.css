@@ -55,13 +55,40 @@ body {
 /* h1 del titulo */
 h1 {
     font-size: 5em;
-    -webkit-text-stroke: #000 1px;
     font-weight: bold;
     padding-bottom: 1em;
+    color: #fff;
+
+    /* text shadow es una alternativa a -webkit-text-stroke: #000 1px;, ya que se veia distinto dependiendo del navegador (en firefox se veia bien y en vivaldi no)*/
+
+    text-shadow: 
+        /* diagonal */
+        -3px -3px 0 #000,  
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000,
+        /* arriba, abajo, izquierda, derecha */
+         0px -3px 0 #000,
+         0px  3px 0 #000,
+        -3px  0px 0 #000,
+         3px  0px 0 #000,
+        /* Sombra*/
+         4px  6px 10px rgba(0, 0, 0, 0.85);
 }
+
 .inverse {
     color: #000;
-    -webkit-text-stroke-color: #fff;
+    text-shadow: 
+        /* diagonal */
+        -3px -3px 0 #fff,  
+         3px -3px 0 #fff,
+        -3px  3px 0 #fff,
+         3px  3px 0 #fff,
+        /* arriba, abajo, izquierda, derecha */
+         0px -3px 0 #fff,
+         0px  3px 0 #fff,
+        -3px  0px 0 #fff,
+         3px  0px 0 #fff;
 }
 /* botones */
 .hero-buttons {
