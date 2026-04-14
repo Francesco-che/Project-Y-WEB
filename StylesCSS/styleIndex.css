@@ -285,7 +285,7 @@ header {
         width: 100%;
     }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
     .shape-divider {
         height: 200px;
     }
@@ -295,5 +295,9 @@ header {
     }
     .heroContent {
         margin-top: -150px; 
+        transform: scale(0.95);
+    }
+    .hero-logo {
+        width: 220px;
     }
 }
