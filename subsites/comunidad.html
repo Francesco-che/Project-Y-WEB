@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/game-logo.png">
+    <link rel="icon" href="../assets/images/game-logo.png">
     
     <title>Comunitat</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -36,7 +36,9 @@
             <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar Tema Color"> ✦ Alterar Energía </button>
         </div>
     </header>
+
     <main>
+        <div class="container-comunidad">
         <section>
             <h2>Podium</h2>
             <section class="podium">
@@ -65,7 +67,7 @@
         </section>
         <section >
             <h2>Ranking</h2>
-            <ol id="ranking">
+            <ol id="ranking" class="ranking-flex">
                 <li>------ (5 pts)</li>
                 <li>------ (4 pts)</li>
                 <li>------ (3 pts)</li>
@@ -78,7 +80,7 @@
         <section>
             <h2>Comunitat</h2>
            <div>
-                <form id="commentForm" onsubmit="event.preventDefault(); afegirComentario();">
+                <form id="commentForm" class="comunidad-form" onsubmit="event.preventDefault(); afegirComentario();">
                     <label for="username">Nom d'usuari:</label>
                         <input type="text" id="username" name="username" required>
 
@@ -88,10 +90,12 @@
                     <button type="submit">Publicar Comentari</button>
                 </form>
         </div>
+        <h3 class="h3-comentaris">Comentaris</h3>
             <section id="comments">
                 <p>No hi ha comentaris encara. Sigues el primer a comentar!</p>    
             </section>
         </section>
+        </div>
     </main>
     <footer>
         <div class="container-logo-footer" style="grid-area: box1;">
