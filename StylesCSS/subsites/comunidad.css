@@ -136,7 +136,7 @@ article > h3 {
 }
 .container-comunidad {
     border: solid var(--color0) 4px;
-    background-color: var(--color1);
+    background: linear-gradient(90deg, #212121d4 0%, #c1d5d7c4 100%);
     margin: 1em 20%;
     border-radius: 20px;
     padding-bottom: 2em;
@@ -153,8 +153,6 @@ header {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    
-
 }
 
 .ranking-flex > li {
@@ -163,4 +161,47 @@ header {
     padding: .3em;
     width: 100%;
     text-align: center;
+}
+
+.comunidad-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    background-color: var(--color0);
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.comunidad-form label {
+    font-size: 1.2em;
+    padding: .5em;
+}
+
+.comunidad-form input, .comunidad-form textarea {
+    min-width: 400px;
+    padding: .5em;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 1em;
+
+    background-color: var(--color2);
+}
+.comunidad-form button {
+    padding: .6em 1em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--color2);
+    color: var(--color0);
+    font-weight: bold;
+    cursor: pointer;
+
+    margin-top: 1.5em;
+    transition: background-color 0.5s ease, color 0.5s ease, padding 0.5s ease;
+}
+.comunidad-form button:hover {
+    background-color: var(--color6);
+    color: var(--color3);
+    padding: .8em 3em;
 }
