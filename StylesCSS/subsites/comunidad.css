@@ -273,3 +273,71 @@ header {
         max-width: 600px;
     }
 }
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+
+    .container-comunidad {
+        width: 95%;
+        padding: 1.5em 1em;
+    }
+
+    .podium {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .podium > section {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 400px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 10px 20px;
+        border-radius: 12px;
+        transform: translateY(0);
+    }
+
+    .podium > section:hover {
+        transform: scale(1.02);
+    }
+
+    .first-place, .second-place, .third-place {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border: none;
+    }
+
+    .podium > section:nth-child(2) { 
+        order: -1; 
+    }
+
+    .comunidad-form {
+        padding: 1.5em 1em;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .ranking-flex > li {
+        font-size: 16px;
+        padding: 0.6em;
+        max-width: 100%;
+    }
+}
