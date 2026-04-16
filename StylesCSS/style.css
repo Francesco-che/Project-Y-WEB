@@ -10,6 +10,10 @@
     --color6: #5d93b4; /* Azul */
     --color7: #c16767; /* rojo */
     --color7b: #a02323; /* tono más oscuro del rojo */
+
+    /* Animaciones ()*/
+    --transitionEspaciadoLetras: letter-spacing 0.4s ease-in-out;
+    --hoverEspaciadoLetras: 0.5em;
 }
 * { /*esto reduce los bordes "predeterminados" del navegador*/
     margin: 0;

@@ -42,20 +42,60 @@
 
 
     <section class="heroSection">
-        <div class="heroImage">
-            <img src="assets/images/fondoindice.png" alt="Imagen Para Examen">
+    
+    <div class="heroContent">
+        <img class="hero-logo" src="assets/images/game-logo.png" alt="Logo de Shared Treasure">
+        <h1>Shared <span class="inverse">Treasure</span></h1>
+        <p>Shared Treasure es un videojuego hecho para la PauJam, sadasdasdsa asdsad asdadsad asda sdas dasd sdasd</p>
+
+        <div class="hero-buttons">
+            <a href="https://kitsune076.itch.io/shared-treasure"><button class="heroBtn" type="button">JUGAR</button></a>
+            <a href="subsites/comunidad.html"><button class="heroBtn" type="button">RANKING</button></a>
         </div>
-        
-        <div class="heroText">
-            <img src="assets/images/game-logo.png" alt="imagen del logo del juego">
-            <h1>Shared <span class="inverse">Treasure</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis laoreet urna. Integer congue, nulla eget laoreet imperdiet, justo felis iaculis odio </p>
-            <button class="heroBtn" type="submit">
-                <div class="heroTxtShader">
-                    DOWNLOAD
+    </div>
+
+    <div class="shape-divider">
+        <div class="franja-negra"></div>
+    </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>¿Qué es Shared Treasure?</h2>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Set out on an adventure built for both creation and play. Hytale blends the freedom of a sandbox with the momentum of an RPG: explore a procedurally generated world full of dungeons, secrets, and a variety of creatures, then shape it block by block.</p>
+                    <p>Our Early Access release focuses on polished core systems - exploration, responsive combat, and robust building - alongside creator-first tools for making your own content, crafting minigames, and running community servers.</p>
+                    <p><strong>Jump in, make your mark, and help us grow this world together!</strong></p>
+
+                    <button class="btn-learn-more">Saber mas</button>
                 </div>
-            </button>
+
+                <div class="about-video">
+                    <video src="../assets/videos/media/video.mp4" autoplay controls>
+                    Error, no supported video format. Please try again later.
+                    </video>
+                    <div class="watch-trailer-text">Ver Trailer</div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="history-section ">
+
+        <div class="image-history imageReveal">
+            <img src="/assets/images/characters/Lin-Completo.png" alt="Imagen del gameplay del juego">
+        </div>
+
+        <div class="text-history autoShow">
+            
+            <h5>En el año 800 DC</h5>
+            <h2>Conoce la historia de Shared Treasure</h2>
+            <p>Shared Treasure es un videojuego hecho para la PauJam, sadasdasdsa asdsad asdadsad asda sdas dasd sdasd</p>
+            <button class="btn-learn-more" > <a href="subsites/historia.html"> Saber mas</a></button>
+
+        </div>
+            
     </section>
     
     <footer>
@@ -79,22 +119,9 @@
             <p>Ⓟ 2026 Shared Treasures. Tots els drets reservats.</p>
     </div>
     </footer>
-    <script>
-   // Seleccionamos el header
-const header = document.querySelector('header');
 
-// Escuchamos cada vez que el usuario hace scroll
-window.addEventListener('scroll', () => {
-    // Si el usuario baja más de 50 píxeles...
-    if (window.scrollY > 50) {
-        // Le añadimos la clase que lo transforma
-        header.classList.add('header-transparent');
-    } else {
-        // Si vuelve arriba, se la quitamos para que vuelva a la normalidad
-        header.classList.remove('header-transparent');
-    }
-});
    
-</script>
+
+    <script src="scripts/header.js"></script>
 </body>
 </html>
