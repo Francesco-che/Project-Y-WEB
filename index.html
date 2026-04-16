@@ -79,5 +79,22 @@
             <p>Ⓟ 2026 Shared Treasures. Tots els drets reservats.</p>
     </div>
     </footer>
+    <script>
+   // Seleccionamos el header
+const header = document.querySelector('header');
+
+// Escuchamos cada vez que el usuario hace scroll
+window.addEventListener('scroll', () => {
+    // Si el usuario baja más de 50 píxeles...
+    if (window.scrollY > 50) {
+        // Le añadimos la clase que lo transforma
+        header.classList.add('header-transparent');
+    } else {
+        // Si vuelve arriba, se la quitamos para que vuelva a la normalidad
+        header.classList.remove('header-transparent');
+    }
+});
+   
+</script>
 </body>
 </html>
