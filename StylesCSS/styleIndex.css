@@ -236,6 +236,91 @@ h1 {
 header {
     background-color: #182020;
 }
+
+.history-section {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+
+    
+}
+.text-history {
+    color: var(--color3);
+   
+    padding: 2em;
+    border-radius: 40px;
+    background-color: var(--color0);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border: solid 3px var(--color3);
+    width: 45%;
+}
+.text-history h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.text-history h5 {
+    font-family: 'Cinzel', serif;
+    color:rgba(186, 96, 181, 0.936);
+    
+}
+
+.autoShow{
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.imageReveal {
+    animation: image-reveal both;
+    animation-timeline: view(50% 20%);
+
+}
+
+@keyframes image-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-history  img{
+    display: flex;
+    width: 70%;
+    border-radius: 20px;
+filter: drop-shadow(4px 4px 8px rgba(162, 82, 158, 0.66));
+}
+
+.image-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    
+}
+
+
 /* =========================================
    MEDIA QUERIES     
    ========================================= */
