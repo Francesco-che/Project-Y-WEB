@@ -196,6 +196,11 @@ h1 {
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, padding 0.4s ease-in-out, var(--transitionEspaciadoLetras);
 }
 
+.btn-learn-more a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .btn-learn-more:hover {
     background-color: var(--color2);
     color: var(--color0);
@@ -320,6 +325,118 @@ filter: drop-shadow(4px 4px 8px rgba(162, 82, 158, 0.66));
     
 }
 
+.contactoIndex {
+    background-color: #000000;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    padding: 4em 0;
+}
+
+.contactoIndex h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.contactoIndex-content {
+    color: white;
+   padding: 7%;
+}
+.contactoIndex-content p{
+    font-size: 20px;
+}
+
+.contactoformOculto {
+    color: var(--color3);
+    padding: 2em;
+    border-radius: 40px;
+    background-color: var(--color0);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 30%;
+    background: rgba(20, 20, 20, 0.6);
+    
+}
+.block-overlay{
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 40px;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;    
+    backdrop-filter: blur(3px);    
+    -webkit-backdrop-filter: blur(3px)
+}
+
+.btn-reveal {
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 1em 3em;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 2px rgba(0, 0, 0, 0.85);
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.btn-reveal a {
+    color: inherit;
+    text-decoration: none !important;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+.btn-reveal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s;
+}
+
+.btn-reveal:hover {
+    background-color: var(--color2);
+    color: var(--color0);
+    padding: 1em 4em;
+    letter-spacing: var(--hoverEspaciadoLetras);
+    box-shadow: 0 0 25px var(--color2);
+    transform: translateY(-3px);
+    border-color: var(--color0);
+    outline: none;
+}
+
+.btn-reveal:hover::before {
+    left: 100%;
+}
+
+.btn-reveal:focus, .btn-reveal:active {
+    outline: none !important;
+    box-shadow: 0 0 25px var(--color2);
+}
 
 /* =========================================
    MEDIA QUERIES     
@@ -332,7 +449,21 @@ filter: drop-shadow(4px 4px 8px rgba(162, 82, 158, 0.66));
     }
 }
 @media (max-width: 768px) {
-    
+    .history-section {
+        flex-direction: column;
+    }
+    .text-history {
+        width: 90%;
+    }
+    .contactoIndex {
+        flex-direction: column;
+        
+    }
+    .contactoformOculto {
+        width: 90%;
+    }
+
+
     .heroContent {
         padding: 1.5rem;
         border-radius: 30px;

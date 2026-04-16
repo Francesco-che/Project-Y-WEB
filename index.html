@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="StylesCSS/style.css">
     <link rel="stylesheet" href="StylesCSS/headerYFooter.css">
     <link rel="stylesheet" href="StylesCSS/styleIndex.css">
+    <link rel="stylesheet" href="../StylesCSS/subsites/contacte.css">
+
 
 </head>
 <body>
@@ -41,7 +43,7 @@
     </header>
 
 
-    <section class="heroSection">
+    <section class="heroSection ">
     
     <div class="heroContent">
         <img class="hero-logo" src="assets/images/game-logo.png" alt="Logo de Shared Treasure">
@@ -59,8 +61,8 @@
     </div>
     </section>
 
-    <section class="about-section">
-        <div class="about-content">
+    <section class="about-section ">
+        <div class="about-content autoShow">
             <h2>¿Qué es Shared Treasure?</h2>
 
             <div class="about-grid">
@@ -97,6 +99,50 @@
         </div>
             
     </section>
+
+    <section class="contactoIndex"> ">
+    <div class="contactoIndex-content autoShow">
+                
+                <h2>Contacta con nosotros</h2>
+                <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos.</p>
+
+            </div>
+        <div class="contactoformOculto autoShow">
+           <section class="fake-form-wrapper">
+                <div class="glass-container">
+                    <div class="block-overlay">
+                        <a href="subsites/contacte.html" class="btn-reveal"> ABRIR FORMULARIO</a>
+                    </div>
+
+                    <form id="contacte-form" class="contacte-form-fake">
+                        <div class="form-group">
+                            <label for="nombre">Nom</label>
+                            <input type="text" disabled placeholder="El teu nom complet">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" disabled placeholder="contacte@empresa.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Assumpte</label>
+                            <input type="text" disabled placeholder="Assumpte de la teva consulta">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Missatge</label>
+                            <textarea rows="4" disabled placeholder="Escriu la teva proposta..."></textarea>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        
+            
+    </section>
+
     
     <footer>
      <div class="container-logo-footer" style="grid-area: box1;">  
@@ -121,7 +167,7 @@
     </footer>
 
    
-
+  
     <script src="scripts/header.js"></script>
 </body>
 </html>
