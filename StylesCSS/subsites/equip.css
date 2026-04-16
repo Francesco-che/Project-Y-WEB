@@ -60,6 +60,10 @@ h3 {
     border-radius: 15px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #previous-dev:hover, #next-dev:hover {
     background-color: #909090;
 }
