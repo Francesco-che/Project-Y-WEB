@@ -11,6 +11,10 @@ body {
     height: 100vh;
     margin: 0;
 }
+header {
+    background-color: #4fb6e1;
+    border: none;
+}
 :root {
     --bg-claro: #F4F1EA;
     --bg-oscuro: #1A1D24;

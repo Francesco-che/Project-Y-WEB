@@ -8,6 +8,10 @@ body {
     background-attachment: fixed;
 }
 
+header {
+    background-color: #031913;
+    border: none;
+}
 .historia-container{
     background-color: var(--color0);
     width: 90%; 

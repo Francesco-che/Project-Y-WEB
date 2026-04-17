@@ -1,3 +1,7 @@
+header {
+    background-color: #141414;
+    border: none;
+}
 /*titulo (fondo imagen)*/
 .contacte-title {
     background-image: url('https://cdn.wallpapersafari.com/22/85/4uX2Nl.png');

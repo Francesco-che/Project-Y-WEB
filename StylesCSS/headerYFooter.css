@@ -137,7 +137,7 @@ header.header-transparent {
     align-items: center;
     justify-content: center;
     border-radius: 12px; 
-    background: linear-gradient(to right, #b5b5b5, #cccccc, #b5b5b5);
+    background: linear-gradient(90deg, #030303 0%, #414653 53%, #000000 100%);
     border: var(--accent-gold) 2px solid; 
     padding: 10px 30px;
     transition: all 0.4s ease;
@@ -166,7 +166,7 @@ header.header-transparent {
 
 .center-nav a {
     text-decoration: none;
-    color: #F4F1EA; 
+    color: var(--color3); 
     font-family: 'IndiraK', Georgia, serif;
     font-size: 20px;
     font-weight: 800;
