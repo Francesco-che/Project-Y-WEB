@@ -1,6 +1,25 @@
+body {
+    font-family: "Cinzel";
+    color: #FFF;
+
+    background-image: url(../../assets/images/backgrounds/pixel_art-bkg2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.historia-container{
+    background-color: var(--color0);
+    width: 90%; 
+    max-width: 1200px;
+    margin: -0.01em auto; /* para que no quede una linea entre contenedores */
+    margin-bottom: 4em;
+    border-radius: 20px;
+    padding: 2em;
+}
 /* Historia titulo */
 .historia-title {
-    background-image: url('https://picsum.photos/1920/600?blur=5');
+    background: radial-gradient(circle, rgb(0, 0, 0) 12%, rgba(205, 201, 207, 0.01) 80%);
     background-size: cover;
     background-position: center;
     min-height: 50vh;
@@ -38,9 +57,20 @@
 .historia-item.text-content {
     display: flex;
     flex-direction: column;
-    gap: 1rem; 
-    font-size: clamp(0.9rem, 2vw, 1.1rem); /* Ajusta el tamaño del texto según el ancho de la pantalla (me ayude con ia para esto) */
-    line-height: 1.6;
+    gap: 1.5rem; 
+    font-size: clamp(0.9rem, 2vw, 1.1rem); /* esto ajusta el tamaño del texto según el ancho de la pantalla*/
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.historia-item.text-content strong {
+    color: var(--color5);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 900;
+    background-color: var(--color3);
+    padding: .2em;
+    border-radius: 8px;
 }
 
 .historia-item.img-wrapper {
@@ -65,13 +95,13 @@
     max-width: 1800px;
     margin: 0 auto 4rem auto;
 
-    padding: 3em 5%;
+    padding: 3em 2%;
     gap: 1em;
 }
 
 .historia-personajes-cajaLin {
     flex: 1;
-    background: linear-gradient(0deg, #4a4a4a 0%, #cbcbcb 48%);
+    background: linear-gradient(0deg, #1a1d24 7%, #cbcbcb 81%);
     transition: flex 1.8s ease;
     border-radius: 1em;
 }
@@ -82,7 +112,7 @@
 
 .historia-personajes-cajaYing {
     flex: 1;
-    background: linear-gradient(0deg, #000000 0%, #4a4a4a 90%);
+    background: linear-gradient(0deg, #1a1d24 0%, #3d3d3d 90%);
     transition: flex 1.8s ease;
     color: white;
     border-radius: 1em;
@@ -142,7 +172,12 @@
         height: auto;
         gap: 4rem;
     }
-    
+
+    .historia-personajes aside:hover .info p {
+        max-height: 800px; /* Aumentamos el límite drásticamente para móviles */
+        padding-bottom: 1rem; /* Le damos un poco de aire al final para que no pegue con el borde */
+    }
+
     .historia-personajes-cajaLin:hover,
     .historia-personajes-cajaYing:hover {
         flex: 5;
