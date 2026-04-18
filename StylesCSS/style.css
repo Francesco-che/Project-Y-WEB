@@ -2,6 +2,7 @@
 :root {
     /*PALETA DE COLORES  (por ahora colores provisionales)*/
     --color0: #1A1D24; /* negro claro*/
+    --color00: #1a1d24e5; /* negro claro con transparencia */
     --color1: #545454; /* Gris oscuro*/
     --color2: #B0B0B0; /* Gris claro*/
     --color3: #E7E7E7; /* Blanco */
