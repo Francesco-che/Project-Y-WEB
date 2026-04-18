@@ -1,3 +1,25 @@
+body {
+    background-image: url(../../assets/images/backgrounds/1b456377a9dce67a7dc3630260aa7572.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #101818;
+    border: none;
+}
+
+.historia-container{
+    background-color: var(--color00);
+    width: 90%; 
+    max-width: 1300px;
+    margin: 2em auto; /* para que no quede una linea entre contenedores */
+    margin-bottom: 4em;
+    padding: 2em;
+    border-radius: 20px;
+}
+
 .h2-title {
     text-align: center;
     padding: .5em 0;
