@@ -1,8 +1,30 @@
-/*titulo (fondo imagen)*/
-.contacte-title {
-    background-image: url('https://cdn.wallpapersafari.com/22/85/4uX2Nl.png');
+body {
+    font-family: "Cinzel";
+    color: #FFF;
+
+    background-image: url(../../assets/images/backgrounds/pixel_art-bkg-animated.gif);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #161718;
+    border: none;
+}
+
+.contacte-container{
+    background-color: rgba(0, 0, 0, 0.932);
+    width: 90%; 
+    max-width: 1200px;
+    margin: -0.01em auto; /* para que no quede una linea entre contenedores */
+    margin-bottom: 4em;
+    padding: 2em;
+    border-radius: 20px;
+}
+/*titulo (fondo imagen)*/
+.contacte-title {
+    background: radial-gradient(circle, #000000 13%, #ffffff00 78%);
     min-height: 60vh;
 
     display: flex;
@@ -12,15 +34,14 @@
     position: relative;
     color: var(--color7);
     overflow: hidden;
-    margin-bottom: 2em;
 }
 
 .contacte-title div {
     z-index: 2;
     position: relative;
-    background-color: #18181896;
     border-radius: 40px;
     padding: 2em;
+    border: solid 2px var(--color7);
 }
 
 .contacte-subtitle {
@@ -29,7 +50,7 @@
     color: var(--color2);
     font-size: 2em;
     color: var(--color3);
-    background-color: #18181896;
+    background: linear-gradient(90deg, #f5f2f200 20%, #1a1d24 30%, #1a1d24 70%, #ffffff00 80%);
 
 }
 /* apartado de info contacto */
@@ -47,14 +68,14 @@
     text-align: center;
 }
 .contacte-info strong {
-    color: var(--color0);
+    color: var(--color7);
 }
 .contacte-info h2 {
     font-size: 2em;
     margin-bottom: 2rem;
 
     padding: .5em;
-    background-color: #18181852;
+    background-color: var(--color0);
     border-radius: 40px;
 }
 .contacte-info p {
@@ -67,9 +88,11 @@
 .contacte-info a {
     color: var(--color7);
     text-decoration: none;
+    transition: color 0.3s, var(--transitionEspaciadoLetras);
 }
 .contacte-info a:hover {
     color: var(--color7b);
+    letter-spacing: .2em;
 }
 /* formulario ----------------------->*/
 
@@ -77,6 +100,7 @@
     background-color: #18181896;
     padding: 2.5rem;
     border-radius: 12px;
+    border: solid 1px var(--color7);
 }
 .contact-form {
     display: flex;
@@ -102,9 +126,9 @@
     width: 100%;
     padding: 1rem;
     background-color: var(--color0);
-    border: 1px solid var(--color1);
+    border: 2px solid var(--color1);
     color: white;
-    border-radius: 6px;
+    border-radius: 20px;
     font-family: inherit;
 
     font-size: 1em;
@@ -114,7 +138,7 @@
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color7);
-    box-shadow: 0 0 5px var(--color7b);
+    box-shadow: 0 0 10px var(--color7b);
 }
 
 .btn-submit-container {
@@ -133,10 +157,12 @@
     font-weight: bold;
     font-family: inherit;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
+    transition: background-color 0.3s, transform 0.1s, var(--transitionEspaciadoLetras);
+
 }
 .btn-submit:hover {
     background-color: var(--color7b);
+    letter-spacing: var(--hoverEspaciadoLetras);
 }
 
 /* un pequeño cambio al footer para ajustarlo con la paleta de colroes de este apartado */

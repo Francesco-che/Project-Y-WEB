@@ -58,6 +58,7 @@ h1 {
     font-weight: bold;
     padding-bottom: 1em;
     color: #fff;
+    font-family: 'IndiraK', Georgia, serif;
 
     /* text shadow es una alternativa a -webkit-text-stroke: #000 1px;, ya que se veia distinto dependiendo del navegador (en firefox se veia bien y en vivaldi no)*/
 
