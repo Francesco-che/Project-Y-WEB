@@ -87,9 +87,11 @@ header {
 .contacte-info a {
     color: var(--color7);
     text-decoration: none;
+    transition: color 0.3s, var(--transitionEspaciadoLetras);
 }
 .contacte-info a:hover {
     color: var(--color7b);
+    letter-spacing: .2em;
 }
 /* formulario ----------------------->*/
 
@@ -154,10 +156,12 @@ header {
     font-weight: bold;
     font-family: inherit;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
+    transition: background-color 0.3s, transform 0.1s, var(--transitionEspaciadoLetras);
+
 }
 .btn-submit:hover {
     background-color: var(--color7b);
+    letter-spacing: var(--hoverEspaciadoLetras);
 }
 
 /* un pequeño cambio al footer para ajustarlo con la paleta de colroes de este apartado */
