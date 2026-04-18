@@ -430,7 +430,7 @@ position: absolute;
 }
 
 .btn-reveal:hover::before {
-    left: 100%;
+left: 100%;
 }
 
 .btn-reveal:focus, .btn-reveal:active {
@@ -441,11 +441,27 @@ position: absolute;
 /* =========================================
    MEDIA QUERIES     
    ========================================= */
+
 @media (min-width: 850px) {
     .about-grid {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
         align-items: center;
+    }
+}
+@media(max-width: 1250px) {
+    .history-section {
+        flex-direction: column;
+    }
+    .text-history {
+        width: 70%;
+    }
+    .contactoIndex {
+        flex-direction: column;
+        
+    }
+    .contactoformOculto {
+        width: 70%;
     }
 }
 @media (max-width: 768px) {
