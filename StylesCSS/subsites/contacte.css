@@ -1,12 +1,29 @@
+body {
+    font-family: "Cinzel";
+    color: #FFF;
+
+    background-image: url(../../assets/images/backgrounds/pixel_art-bkg-animated.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 header {
     background-color: #141414;
     border: none;
 }
+
+.contacte-container{
+    background-color: rgba(0, 0, 0, 0.932);
+    width: 90%; 
+    max-width: 1200px;
+    margin: -0.01em auto; /* para que no quede una linea entre contenedores */
+    margin-bottom: 4em;
+    padding: 2em;
+}
 /*titulo (fondo imagen)*/
 .contacte-title {
-    background-image: url('https://cdn.wallpapersafari.com/22/85/4uX2Nl.png');
-    background-size: cover;
-    background-position: center;
+    background: radial-gradient(circle, #000000 13%, #ffffff00 78%);
     min-height: 60vh;
 
     display: flex;
@@ -16,15 +33,14 @@ header {
     position: relative;
     color: var(--color7);
     overflow: hidden;
-    margin-bottom: 2em;
 }
 
 .contacte-title div {
     z-index: 2;
     position: relative;
-    background-color: #18181896;
     border-radius: 40px;
     padding: 2em;
+    border: solid 2px var(--color7);
 }
 
 .contacte-subtitle {
@@ -33,7 +49,7 @@ header {
     color: var(--color2);
     font-size: 2em;
     color: var(--color3);
-    background-color: #18181896;
+    background: linear-gradient(90deg, #f5f2f200 20%, #1a1d24 30%, #1a1d24 70%, #ffffff00 80%);
 
 }
 /* apartado de info contacto */
@@ -51,14 +67,14 @@ header {
     text-align: center;
 }
 .contacte-info strong {
-    color: var(--color0);
+    color: var(--color7);
 }
 .contacte-info h2 {
     font-size: 2em;
     margin-bottom: 2rem;
 
     padding: .5em;
-    background-color: #18181852;
+    background-color: var(--color0);
     border-radius: 40px;
 }
 .contacte-info p {
@@ -81,6 +97,7 @@ header {
     background-color: #18181896;
     padding: 2.5rem;
     border-radius: 12px;
+    border: solid 1px var(--color7);
 }
 .contact-form {
     display: flex;
@@ -106,7 +123,7 @@ header {
     width: 100%;
     padding: 1rem;
     background-color: var(--color0);
-    border: 1px solid var(--color1);
+    border: 2px solid var(--color1);
     color: white;
     border-radius: 20px;
     font-family: inherit;
@@ -118,7 +135,7 @@ header {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color7);
-    box-shadow: 0 0 5px var(--color7b);
+    box-shadow: 0 0 10px var(--color7b);
 }
 
 .btn-submit-container {
