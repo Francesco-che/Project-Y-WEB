@@ -192,4 +192,7 @@ footer {
     .contacte-subtitle {
         font-size: 1.5em;
     }
+    .contact-grid {
+    padding: 4rem 0;
+}
 }

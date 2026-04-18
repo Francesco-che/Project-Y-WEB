@@ -13,8 +13,13 @@ main {
 
 .teammembers-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    position: relative;
+    padding: 0 60px;
 }
 
 h2 {
@@ -22,11 +27,14 @@ h2 {
     margin-top: 48px;
     margin-bottom: 16px;
     font-size: 48px;
+    color: var(--color3);
+    text-shadow: 0px 2px 40px var(--color4);
 }
 
 h3 {
     text-align: center;
     font-size: 32px;
+    color: var(--color);
 }
 
 .pfp {
@@ -43,6 +51,11 @@ h3 {
     align-items: center;
 }
 
+.socials p {
+    word-break: break-word; 
+    text-align: center;
+}
+
 .socials > div {
     display: flex;
     align-items: center;
@@ -55,17 +68,39 @@ h3 {
     height: 50px;
     font-size: 36px;
     align-self: center;
-    background-color: #B0B0B0;
-    border: #000 solid 3px;
+    background-color: var(--color0);
+    color: var(--color6);
+    border: var(--color6) solid 3px;
     border-radius: 15px;
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+header {
+    background-color: #232d46;
+    border: none;
 }
 
 body {
     overflow-x: hidden;
+
+    background-image: url(../../assets/images/backgrounds/pixel_art-bkg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.equip-container {
+    background: linear-gradient(90deg, #1a1d2400 3%, #1a1d2478 7%, #1a1d24 16%, #1a1d24 85%, #1a1d2478 94%, #1a1d2400 100%);
+    width: 90%; 
+    max-width: 2000px;
+    margin-bottom: 4em;
+    border-radius: 20px;
+    padding: 1em;
 }
 
 #previous-dev:hover, #next-dev:hover {
-    background-color: #909090;
+    background-color: var(--color1);
 }
 
 #previous-dev:active, #next-dev:active {
@@ -104,4 +139,25 @@ body {
     #next-dev {
         right: 5vw;
     }
+
+    .equip-container {
+        width: 95%;
+        padding: 1.5em 1em;
+    }
+
+    main {
+        margin: 20px 10px; /* Reducimos el margen gigante de 40px */
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    .equip-container {
+    background-color: var(--color0);
+}
 }
