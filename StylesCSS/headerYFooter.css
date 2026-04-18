@@ -99,7 +99,7 @@ header.header-transparent {
     }
 
     header.header-transparent .menu-toggle:checked ~ ul {
-        display: flex;
+        display: grid;
         
     }
 
@@ -346,7 +346,7 @@ footer {
 @media (max-width: 1300px) {
     .center-nav a {
         text-decoration: none;
-        color: #1a1a1a; 
+        color: #dbd2d2; 
         font-family: 'Cinzel', Georgia, serif; 
         font-size: 14px;
         font-weight: 800;
@@ -454,7 +454,11 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-
+    header.header-transparent .center-nav ul {
+        width: 80%;
+        left: 10%;
+        top: 61px;
+    }
     .footer-nav ul {
         flex-direction: column;
         gap: 10px;
