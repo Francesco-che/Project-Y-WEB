@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #141414;
+    background-color: #161718;
     border: none;
 }
 
@@ -20,6 +20,7 @@ header {
     margin: -0.01em auto; /* para que no quede una linea entre contenedores */
     margin-bottom: 4em;
     padding: 2em;
+    border-radius: 20px;
 }
 /*titulo (fondo imagen)*/
 .contacte-title {
