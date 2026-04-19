@@ -5,6 +5,24 @@ body.light-theme {
 body.light-theme img, 
 body.light-theme video, 
 body.light-theme .heroSection, 
-body.light-theme .shape-divider  {
+body.light-theme .shape-divider{
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* personalizaciones */
+body.light-theme header {
+    box-shadow: 0 10px 0px rgba(255, 255, 255, 0.3);
+    background-color: var(--bg-claro);
+}
+body.light-theme header.header-transparent {
+    background-color: var(--bg-oscuro);
+}
+body.light-theme .first-place {
+    filter: invert(1) hue-rotate(180deg);
+}
+body.light-theme .second-place{
+    filter: invert(1) hue-rotate(180deg);
+}
+body.light-theme .third-place {
     filter: invert(1) hue-rotate(180deg);
 }
