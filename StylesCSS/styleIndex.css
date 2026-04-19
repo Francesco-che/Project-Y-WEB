@@ -5,6 +5,7 @@
 body {
     background-color: #101818;
 }
+
 /* Sección hero */
 .heroSection {
     position: relative; /* Clave para posicionar el shape divider abajo */

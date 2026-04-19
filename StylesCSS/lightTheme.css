@@ -1,0 +1,10 @@
+body.light-theme {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #101818; 
+}
+body.light-theme img, 
+body.light-theme video, 
+body.light-theme .heroSection, 
+body.light-theme .shape-divider  {
+    filter: invert(1) hue-rotate(180deg);
+}
