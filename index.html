@@ -9,16 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/game-logo.png">
     <title>Project Y</title>
-
+    <link rel="stylesheet" href="StylesCSS/styleIndex.css">
     <link rel="stylesheet" href="StylesCSS/style.css">
     <link rel="stylesheet" href="StylesCSS/headerYFooter.css">
     <link rel="stylesheet" href="./StylesCSS/subsites/contacte.css">
     <link rel="stylesheet" href="StylesCSS/lightTheme.css">
-    <link rel="stylesheet" href="StylesCSS/styleIndex.css">
+    
+    
 
 
 </head>
-<body>
+<body class="bodyIndex">
     <header>
         <div class="box" style="grid-area: box1;">  
             <img class="logo" src="assets/images/game-logo.png" alt="imagen del logo del juego"> 
@@ -144,6 +145,37 @@
             
     </section>
 
+     <div class="container-comunidad autoShow">
+        <section>
+            <h2>Podium</h2>
+            <section class="podium">
+                <section>
+                    <div>
+                        <p class="points2">5 pts</p>
+                        <h4 id="namePlayer2">------</h4>
+                    </div>
+                    <div class="second-place">2</div>
+                </section>
+                <section>
+                    <div>
+                        <p class="points1">4 pts</p>
+                        <h4 id="namePlayer1">------</h4>
+                    </div>
+                    <div class="first-place">1</div>
+                </section>
+                <section>
+                    <div>
+                        <p class="points3">3 pts</p>
+                        <h4 id="namePlayer3">------</h4>
+                    </div>
+                    <div class="third-place">3</div>
+                </section>
+            </section>
+        </section>
+        <section >
+        <button class="btn-learn-more"><a href="subsites/comunidad.html"> Saber-ne més</a></button>
+</div>
+
     
     <footer>
      <div class="container-logo-footer" style="grid-area: box1;">  
@@ -171,5 +203,6 @@
   
     <script src="scripts/header.js"></script>
     <script src="scripts/alterarenergia.js"></script>
+    <script src="scripts/fetch.js"></script>
 </body>
 </html>

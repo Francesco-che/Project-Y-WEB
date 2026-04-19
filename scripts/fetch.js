@@ -17,16 +17,20 @@ const podium = document.getElementsByClassName("podium");
 
 
 function obtenerClasificacion() {
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
             dataBaseUsuarios = data.data;
-          console.log("Datos obtenidos:", dataBaseUsuarios);
-          mostrarClasificacion();
-            podio();
+            
+            
+            try { mostrarClasificacion(); } catch (e) {}
+            
+            
+            try { podio(); } catch (e) {}
       })
-    .catch(error => console.error("Error fetching data:", error));
+      .catch(error => console.error("Error fetching data:", error));
 }
+obtenerClasificacion();
 obtenerClasificacion();
 function obtenerComentarios() {
 fetch(urlcomments)
