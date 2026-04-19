@@ -37,6 +37,8 @@ header {
     width: 80%;
     max-width: 1200px;
     background-color: var(--color2); /* por si tarda en cargar */
+    border: solid 2px var(--color3);
+    border-radius: 20px;
 }
 
 /* --- SCREENSHOTS GRID --- */
