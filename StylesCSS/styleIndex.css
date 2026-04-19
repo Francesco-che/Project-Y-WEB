@@ -424,7 +424,7 @@ position: absolute;
     background-color: var(--color2);
     color: var(--color0);
     padding: 1em 4em;
-    letter-spacing: var(--hoverEspaciadoLetras);
+    letter-spacing: .3em;
     box-shadow: 0 0 25px var(--color2);
     transform: translateY(-3px);
     border-color: var(--color0);

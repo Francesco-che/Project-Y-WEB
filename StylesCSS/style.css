@@ -41,10 +41,8 @@ body {
 }
 
 body.dark-theme {
-    /* Aquí "sobrescribes" los colores que quieres que cambien al otro tema */
     --fondo-body: var(--color0); /* Cambia el fondo gris a negro claro */
-    --color2: #333333; /* Haces la línea divisoria más oscura */
-    /* Los colores vivos como azul o amarillo los puedes dejar igual o ajustarlos aquí */
+    --color2: #333333;
 }
 
 
