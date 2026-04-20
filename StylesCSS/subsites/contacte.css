@@ -70,6 +70,12 @@ header {
 .contacte-info strong {
     color: var(--color7);
 }
+.contacte-link {
+    border-bottom: solid 1px var(--color7);
+}
+.contacte-link:hover {
+    border-bottom: none;
+}
 .contacte-info h2 {
     font-size: 2em;
     margin-bottom: 2rem;
