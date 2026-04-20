@@ -1,4 +1,4 @@
-const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/posts/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS";
+const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/posts/ZHVxZUtGF4E0wzz0400BRy8imjHDgZPmL5m5UD5VYBUCstloOUH2sSbbS9ef";
 
 let dataBasePosts = [];
 
@@ -9,7 +9,10 @@ fetch(url)
   .then(data => {
             dataBasePosts = data.data;
           console.log("Datos obtenidos:", dataBasePosts);
+          if (dataBasePosts.length > 0) {
           mostrarPosts();
+      }
+
       })
     .catch(error => console.error("Error fetching data:", error));
 }

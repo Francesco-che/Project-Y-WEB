@@ -11,6 +11,16 @@ body {
     height: 100vh;
     margin: 0;
 }
+.blog-post {
+    background-color: rgba(26, 29, 36, 0.8);
+    padding: 30px;
+    margin: 0 auto 30px auto; 
+    border-radius: 8px;
+    max-width: 900px; 
+    color: white;
+    text-transform: uppercase;
+   text-align: center;
+}
 header {
     background-color: #4fb6e1;
     border: none;

@@ -22,11 +22,12 @@ function obtenerClasificacion() {
       .then(data => {
             dataBaseUsuarios = data.data;
             
-            
+            if (dataBaseUsuarios.length > 0) {
             try { mostrarClasificacion(); } catch (e) {}
             
             
             try { podio(); } catch (e) {}
+        }
       })
       .catch(error => console.error("Error fetching data:", error));
 }
@@ -38,7 +39,9 @@ fetch(urlcomments)
   .then(data => {
             dataBaseComments = data.data;
           console.log("Datos obtenidos:", dataBaseComments);
-          mostrarComentarios();
+          if (dataBaseComments.length > 0) {
+            mostrarComentarios();
+          }
       })
     .catch(error => console.error("Error fetching data:", error));
 }
@@ -116,7 +119,7 @@ function  mostrarComentarios(){
 const afegirComentario = () => {
     const nameInput = document.getElementById("username");
     const commentInput = document.getElementById("comment");
-    const miApiToken = "pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS";
+    const miApiToken = "ZHVxZUtGF4E0wzz0400BRy8imjHDgZPmL5m5UD5VYBUCstloOUH2sSbbS9ef";
  
     const nuevoComentario = {
         api_token: miApiToken,
