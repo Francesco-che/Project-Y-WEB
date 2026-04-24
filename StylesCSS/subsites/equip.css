@@ -107,6 +107,14 @@ body {
     background-color: #727272;
 }
 
+#gamedev-section, #webdev-section {
+    transition: all 0.3s ease;
+}
+
+.reverse {
+    rotate: 180deg;
+}
+
 @media(max-width: 560px) {
     h2 {
         font-size: 36px;
@@ -124,10 +132,11 @@ body {
 @media(min-width: 1400px) {
     #previous-dev, #next-dev {
         display: none;
+        position: absolute;
     }
 }
 
-@media(max-width: 810px) {
+@media(max-width: 950px) {
     #previous-dev, #next-dev {
         position: absolute;
     }
@@ -158,6 +167,6 @@ body {
         font-size: 24px;
     }
     .equip-container {
-    background-color: var(--color0);
-}
+        background-color: var(--color0);
+    }
 }
