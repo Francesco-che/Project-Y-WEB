@@ -117,8 +117,6 @@ header.header-transparent {
         display: inline-block;
         transition: transform 0.3s ease, color 0.3s ease;
         font-size: 20px;
-    
-        
     }
     
 
@@ -177,11 +175,14 @@ header.header-transparent {
     border: 2px solid transparent;
 }
 
-/* Hover con tus variables de color */
 .center-nav a:hover {
     background-color: rgba(26, 29, 36, 0.8); /* Usa un tono oscuro para contrastar con el dorado */
     box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
     border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.header-selected a{
     color: var(--accent-gold);
 }
 
