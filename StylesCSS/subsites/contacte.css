@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #161718;
+    background-color: #1a1d24;
     border: none;
 }
 
@@ -21,19 +21,6 @@ header {
     margin-bottom: 4em;
     padding: 2em;
     border-radius: 20px;
-}
-/*titulo (fondo imagen)*/
-.contacte-title {
-    background: radial-gradient(circle, #000000 13%, #ffffff00 78%);
-    min-height: 60vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    color: var(--color7);
-    overflow: hidden;
 }
 
 .contacte-title div {
