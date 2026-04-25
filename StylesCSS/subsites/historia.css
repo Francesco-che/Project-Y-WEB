@@ -16,7 +16,7 @@ header {
     background-color: var(--color0);
     width: 90%; 
     max-width: 1200px;
-    margin: -0.01em auto; /* para que no quede una linea entre contenedores */
+    margin: 2em auto; /* para que no quede una linea entre contenedores */
     margin-bottom: 4em;
     border-radius: 20px;
     padding: 2em;
