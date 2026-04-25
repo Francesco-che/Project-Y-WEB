@@ -21,21 +21,7 @@ header {
     border-radius: 20px;
     padding: 2em;
 }
-/* Historia titulo */
-.historia-title {
-    background: radial-gradient(circle, rgb(0, 0, 0) 12%, rgba(205, 201, 207, 0.01) 80%);
-    background-size: cover;
-    background-position: center;
-    min-height: 50vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    color: var(--color5);
-    overflow: hidden;
-}
 
 .historia-title div {
     z-index: 2;
