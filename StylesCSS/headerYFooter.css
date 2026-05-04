@@ -78,10 +78,11 @@ header.header-transparent {
         position: static; 
     }
 
-    header.header-transparent .center-nav a {
+    header.header-transparent .header-selected .center-nav a {
         color: #f3eedc; 
         font-size: 18px;
     }
+
 
     header.header-transparent .center-nav a:hover {
         background-color: transparent;
