@@ -210,6 +210,33 @@ h1 {
     letter-spacing: var(--hoverEspaciadoLetras);
 }
 
+.btn-verTrailer {
+    background-color: var(--color3); 
+    color: var(--color0);
+    padding: .8em 3em;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -1rem;
+    border: solid 3px var(--color3);
+    font-family: 'Cinzel', serif;
+
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, padding 0.3s ease-in-out, var(--transitionEspaciadoLetras);
+}
+
+.btn-verTrailer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn-verTrailer:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: .8em 3em;
+    letter-spacing: var(--hoverEspaciadoLetras);
+}
+
 .about-video {
     display: flex;
     flex-direction: column;
