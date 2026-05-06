@@ -212,8 +212,8 @@ h1 {
 }
 
 .btn-verTrailer {
-    background-color: var(--color3); 
-    color: var(--color0);
+    background-color: var(--color1); 
+    color: var(--color3);
     padding: .8em 3em;
     border-radius: 20px;
     font-size: 1rem;
@@ -232,8 +232,8 @@ h1 {
 }
 
 .btn-verTrailer:hover {
-    background-color: var(--color1);
-    color: var(--color3);
+    background-color: var(--color3);
+    color: var(--color0);
     padding: .8em 3em;
     letter-spacing: var(--hoverEspaciadoLetras);
 }
