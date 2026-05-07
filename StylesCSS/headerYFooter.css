@@ -75,7 +75,7 @@ header.header-transparent {
         border: none;    
         padding: 0;
         justify-content: center;
-        position: static; 
+        position: static;
     }
 
     header.header-transparent .header-selected .center-nav a {
@@ -86,11 +86,9 @@ header.header-transparent {
 
     header.header-transparent .center-nav a:hover {
         background-color: transparent;
-        border-bottom: none;
         border: 1px transparent ;
         color: var(--accent-gold);
-        display: inline-block;
-        transition: transform 0.3s ease, color 0.3s ease;
+        transition: color 0.3s ease;
         font-size: 20px;
     }
     
