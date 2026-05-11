@@ -299,6 +299,17 @@ header {
     transition: all 0.3s ease;
 }
 
+.btn-paginacion:hover {
+    background-color: var(--color6);
+    letter-spacing: .1em;
+}
+
+#pageInfo {
+    font-size: 1.2rem;
+    color: #FFF;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     h2 {
         font-size: 36px;
