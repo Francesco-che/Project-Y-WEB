@@ -58,11 +58,17 @@ function mostrarClasificacion() {
     const fin = inicio + elementosPorPagina;
     
     const usuariosPagina = dataBaseUsuarios.slice(inicio, fin);
-
     usuariosPagina.forEach((usuario, index) => {
+        const puesto = inicio + index + 1;
+        
+        let estiloColor = "color: inherit;"; 
+        if (puesto === 1) estiloColor = "color: var(--first-place); font-weight: bold;";
+        else if (puesto === 2) estiloColor = "color: var(--second-place); font-weight: bold;";
+        else if (puesto === 3) estiloColor = "color: var(--third-place); font-weight: bold;";
+
         rankingTotal.innerHTML += `
-            <li>
-                ${usuario.name} (${usuario.puntuacion} pts)
+            <li style="${estiloColor}">
+                ${puesto}. ${usuario.name} (${usuario.puntuacion} pts)
             </li>
         `;
     });
