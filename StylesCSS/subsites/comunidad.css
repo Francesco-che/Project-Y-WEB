@@ -203,6 +203,12 @@ header {
     border-radius: 20px;
 }
 
+.container-form-comunidad{
+    min-width: 40%;
+    max-width: 60%;
+    margin-top: 2em;
+}
+
 .comunidad-form label {
     font-size: 1.2em;
     padding: .5em;
@@ -215,8 +221,11 @@ header {
     border-radius: 4px;
     border: none;
     margin-bottom: 1em;
-
-    background-color: var(--color2);
+    box-shadow: 0 0 20px var(--color7);
+    color: var(--color3);
+    background-color: var(--color7);
+    font-family: cinzel;
+    font-weight: bold;
 }
 .comunidad-form button {
     padding: .6em 1em;
@@ -226,12 +235,13 @@ header {
     color: var(--color0);
     font-weight: bold;
     cursor: pointer;
+    font-family: cinzel;
 
     margin-top: 1.5em;
     transition: background-color 0.5s ease, color 0.5s ease, padding 0.5s ease;
 }
 .comunidad-form button:hover {
-    background-color: var(--color5);
+    background-color: var(--color7);
     color: var(--color3);
     padding: .8em 3em;
 }
