@@ -79,14 +79,6 @@ function mostrarClasificacion() {
     }
 }
 
-
-
-
- 
-
-
-
-
 function podio() {
     const firstPlace = document.getElementById("namePlayer1");
     const points1 = document.getElementsByClassName("points1");  
@@ -168,4 +160,12 @@ const afegirComentario = () => {
     .catch(error => console.error('Error:', error));
 };
 
+function actualizarControlesPaginacion() {
+    const btnAnterior = document.getElementById("paginaAnterior");
+    const btnSiguiente = document.getElementById("paginaSiguiente");
+    const paginaInfo = document.getElementById("paginaInfo");
 
+    if (!btnAnterior || !btnSiguiente || !paginaInfo) {
+        return;
+    }
+}
