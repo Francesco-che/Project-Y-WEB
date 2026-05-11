@@ -52,6 +52,8 @@ function mostrarClasificacion() {
    
     rankingTotal.innerHTML = "";
    
+    rankingTotal.style.listStyle = "none";
+    
     const inicio = (paginaActual - 1) * elementosPorPagina;
     const fin = inicio + elementosPorPagina;
     
