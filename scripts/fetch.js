@@ -175,7 +175,9 @@ function actualizarControlesPaginacion() {
     btnAnterior.disabled = (paginaActual === 1);
     btnSiguiente.disabled = (paginaActual === totalPaginas);
 
-    document.addEventListener('DOMContentLoaded', () => {
+}
+
+document.addEventListener('DOMContentLoaded', () => {
     const btnAnterior = document.getElementById("paginaAnterior");
     const btnSiguiente = document.getElementById("paginaSiguiente");
 
@@ -196,4 +198,3 @@ function actualizarControlesPaginacion() {
         });
     }
 });
-}
