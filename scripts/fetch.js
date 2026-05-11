@@ -178,5 +178,22 @@ function actualizarControlesPaginacion() {
     document.addEventListener('DOMContentLoaded', () => {
     const btnAnterior = document.getElementById("paginaAnterior");
     const btnSiguiente = document.getElementById("paginaSiguiente");
+
+    if (btnAnterior && btnSiguiente) {
+        btnAnterior.addEventListener('click', () => {
+            if (paginaActual > 1) {
+                paginaActual--;
+                mostrarClasificacion();
+            }
+        });
+
+        btnSiguiente.addEventListener('click', () => {
+            const totalPaginas = Math.ceil(dataBaseUsuarios.length / elementosPorPagina);
+            if (paginaActual < totalPaginas) {
+                paginaActual++;
+                mostrarClasificacion();
+            }
+        });
+    }
 });
 }
