@@ -52,12 +52,15 @@ function mostrarClasificacion() {
    
     rankingTotal.innerHTML = "";
    
-    dataBaseUsuarios.forEach((usuario,index) => {
-       
+    const inicio = (paginaActual - 1) * elementosPorPagina;
+    const fin = inicio + elementosPorPagina;
+    
+    const usuariosPagina = dataBaseUsuarios.slice(inicio, fin);
+
+    usuariosPagina.forEach((usuario, index) => {
         rankingTotal.innerHTML += `
             <li>
                 ${usuario.name} (${usuario.puntuacion} pts)
-               
             </li>
         `;
     });
