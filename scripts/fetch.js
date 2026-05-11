@@ -3,10 +3,10 @@ const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/classificati
 const urlcomments = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/comments/ZHVxZUtGF4E0wzz0400BRy8imjHDgZPmL5m5UD5VYBUCstloOUH2sSbbS9ef";
  
 let dataBaseUsuarios = [];
-
-
 let dataBaseComments = [];
 
+let paginaActual = 1;
+const elementosPorPagina = 15;
 
 const firstPlace = document.getElementsByClassName("first-place");
 const secondPlace = document.getElementsByClassName("second-place");
