@@ -338,6 +338,7 @@ header {
     .container-comunidad {
         width: 95%;
         padding: 1.5em 1em;
+        box-sizing: border-box;
     }
 
     .podium {
@@ -364,6 +365,11 @@ header {
         transform: scale(1.02);
     }
 
+    .container-form-comunidad {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
     .first-place, .second-place, .third-place {
         width: 60px;
         height: 60px;
@@ -382,6 +388,7 @@ header {
     .comunidad-form {
         padding: 1.5em 1em;
         width: 100%;
+        box-sizing: border-box;
     }
 
     article {
@@ -389,8 +396,23 @@ header {
     }
 
     .ranking-flex > li {
+        width: 100%;
         font-size: 16px;
         padding: 0.6em;
         max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .paginacion-controles {
+        gap: 10px;
+    }
+    
+    .btn-paginacion {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    #pageInfo {
+        font-size: 1rem;
     }
 }
