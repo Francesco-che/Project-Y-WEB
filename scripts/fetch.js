@@ -72,6 +72,11 @@ function mostrarClasificacion() {
             </li>
         `;
     });
+
+    try{ 
+        actualizarControlesPaginacion();
+    } catch (e) {
+    }
 }
 
 
