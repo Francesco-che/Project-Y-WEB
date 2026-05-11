@@ -180,16 +180,17 @@ header {
     background-color: var(--color1);
     border-radius: 4px;
     padding: .4em;
-    width: 100%;
-    max-width: 800px;
+    width: 400px;
+    max-width: 600px;
 
     text-align: center;
 
-    transition: border-radius 0.4s ease-in-out;
+    transition: border-radius 0.5s ease-in-out, background-color 0.2s ease-in-out;
+    
 }
 .ranking-flex > li:hover {
-    border-radius: 20px;
-    border: solid var(--color3) 2px;
+    border-radius: 40px;
+    background-color: var(--color6);
 }
 
 .comunidad-form {
@@ -201,6 +202,12 @@ header {
     background-color: black;
     padding: 2em;
     border-radius: 20px;
+}
+
+.container-form-comunidad{
+    min-width: 40%;
+    max-width: 60%;
+    margin-top: 2em;
 }
 
 .comunidad-form label {
@@ -215,8 +222,11 @@ header {
     border-radius: 4px;
     border: none;
     margin-bottom: 1em;
-
-    background-color: var(--color2);
+    box-shadow: 0 0 20px var(--color7);
+    color: var(--color3);
+    background-color: var(--color7);
+    font-family: cinzel;
+    font-weight: bold;
 }
 .comunidad-form button {
     padding: .6em 1em;
@@ -226,12 +236,13 @@ header {
     color: var(--color0);
     font-weight: bold;
     cursor: pointer;
+    font-family: cinzel;
 
     margin-top: 1.5em;
     transition: background-color 0.5s ease, color 0.5s ease, padding 0.5s ease;
 }
 .comunidad-form button:hover {
-    background-color: var(--color5);
+    background-color: var(--color7);
     color: var(--color3);
     padding: .8em 3em;
 }
@@ -263,6 +274,8 @@ header {
 .comment p {
     font-size: 16px;
 }
+
+
 @media (max-width: 1024px) {
     .first-place, .second-place, .third-place {
         width: 180px; 
@@ -272,6 +285,46 @@ header {
         width: 100%;
         max-width: 600px;
     }
+}
+
+/* paginacion */
+.paginacion-controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-paginacion {
+    background-color: var(--color3);
+    color: var(--color0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-paginacion:hover {
+    background-color: var(--color6);
+    letter-spacing: .1em;
+}
+
+#pageInfo {
+    font-size: 1.2rem;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.btn-paginacion:disabled {
+    background-color: #333;
+    color: #777;
+    cursor: not-allowed;
 }
 
 @media (max-width: 768px) {

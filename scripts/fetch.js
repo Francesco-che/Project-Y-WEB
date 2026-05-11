@@ -3,10 +3,10 @@ const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/classificati
 const urlcomments = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/comments/ZHVxZUtGF4E0wzz0400BRy8imjHDgZPmL5m5UD5VYBUCstloOUH2sSbbS9ef";
  
 let dataBaseUsuarios = [];
-
-
 let dataBaseComments = [];
 
+let paginaActual = 1;
+const elementosPorPagina = 15;
 
 const firstPlace = document.getElementsByClassName("first-place");
 const secondPlace = document.getElementsByClassName("second-place");
@@ -52,24 +52,32 @@ function mostrarClasificacion() {
    
     rankingTotal.innerHTML = "";
    
-    dataBaseUsuarios.forEach((usuario,index) => {
-       
+    rankingTotal.style.listStyle = "none";
+    
+    const inicio = (paginaActual - 1) * elementosPorPagina;
+    const fin = inicio + elementosPorPagina;
+    
+    const usuariosPagina = dataBaseUsuarios.slice(inicio, fin);
+    usuariosPagina.forEach((usuario, index) => {
+        const puesto = inicio + index + 1;
+        
+        let estiloColor = "color: inherit;"; 
+        if (puesto === 1) estiloColor = "color: var(--first-place); font-weight: bold;";
+        else if (puesto === 2) estiloColor = "color: var(--second-place); font-weight: bold;";
+        else if (puesto === 3) estiloColor = "color: var(--third-place); font-weight: bold;";
+
         rankingTotal.innerHTML += `
-            <li>
-                ${usuario.name} (${usuario.puntuacion} pts)
-               
+            <li style="${estiloColor}">
+                ${puesto}. ${usuario.name} (${usuario.puntuacion} pts)
             </li>
         `;
     });
+
+    try{ 
+        actualizarControlesPaginacion();
+    } catch (e) {
+    }
 }
-
-
-
-
- 
-
-
-
 
 function podio() {
     const firstPlace = document.getElementById("namePlayer1");
@@ -152,4 +160,41 @@ const afegirComentario = () => {
     .catch(error => console.error('Error:', error));
 };
 
+function actualizarControlesPaginacion() {
+    const btnAnterior = document.getElementById("paginaAnterior");
+    const btnSiguiente = document.getElementById("paginaSiguiente");
+    const paginaInfo = document.getElementById("paginaInfo");
 
+    if (!btnAnterior || !btnSiguiente || !paginaInfo) {
+        return;
+    }
+
+    const totalPaginas = Math.ceil(dataBaseUsuarios.length / elementosPorPagina) || 1;
+    paginaInfo.textContent = `Página ${paginaActual} de ${totalPaginas}`;
+
+    btnAnterior.disabled = (paginaActual === 1);
+    btnSiguiente.disabled = (paginaActual === totalPaginas);
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btnAnterior = document.getElementById("paginaAnterior");
+    const btnSiguiente = document.getElementById("paginaSiguiente");
+
+    if (btnAnterior && btnSiguiente) {
+        btnAnterior.addEventListener('click', () => {
+            if (paginaActual > 1) {
+                paginaActual--;
+                mostrarClasificacion();
+            }
+        });
+
+        btnSiguiente.addEventListener('click', () => {
+            const totalPaginas = Math.ceil(dataBaseUsuarios.length / elementosPorPagina);
+            if (paginaActual < totalPaginas) {
+                paginaActual++;
+                mostrarClasificacion();
+            }
+        });
+    }
+});
