@@ -310,6 +310,12 @@ header {
     font-weight: bold;
 }
 
+.btn-paginacion:disabled {
+    background-color: #333;
+    color: #777;
+    cursor: not-allowed;
+}
+
 @media (max-width: 768px) {
     h2 {
         font-size: 36px;
