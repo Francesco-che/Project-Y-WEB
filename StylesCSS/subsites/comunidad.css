@@ -286,6 +286,19 @@ header {
     width: 100%;
 }
 
+.btn-paginacion {
+    background-color: var(--color3);
+    color: var(--color0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
     h2 {
         font-size: 36px;
