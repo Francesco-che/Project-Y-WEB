@@ -168,4 +168,10 @@ function actualizarControlesPaginacion() {
     if (!btnAnterior || !btnSiguiente || !paginaInfo) {
         return;
     }
+
+    const totalPaginas = Math.ceil(dataBaseUsuarios.length / elementosPorPagina) || 1;
+    paginaInfo.textContent = `Página ${paginaActual} de ${totalPaginas}`;
+
+    btnAnterior.disabled = (paginaActual === 1);
+    btnSiguiente.disabled = (paginaActual === totalPaginas);
 }
